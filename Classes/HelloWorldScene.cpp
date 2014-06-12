@@ -1,8 +1,8 @@
 #include "HelloWorldScene.h"
-
-#define PTM_RATIO 32
+#include "ScrollTestScene.h"
 
 USING_NS_CC;
+USING_NS_CC_EXT;
 
 Scene* HelloWorld::createScene()
 {
@@ -30,44 +30,25 @@ bool HelloWorld::init()
     }
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    Point origin = Director::getInstance()->getVisibleOrigin();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    b2Vec2 gravity;
-    gravity.Set(0.0f, -10.0f); // 重力
-    world = new b2World(gravity);
-    world->SetAllowSleeping(true);
-    world->SetContinuousPhysics(true);
+    /////////////////////////////
+    // 2. add a menu item with "X" image, which is clicked to quit the program
+    //    you may modify it.
 
-    // 地面の定義
-    b2BodyDef groundBodyDef;
-    groundBodyDef.position.Set(0, 0);
+    // add a "close" icon to exit the progress. it's an autorelease object
+    auto closeItem = MenuItemImage::create(
+                                           "CloseNormal.png",
+                                           "CloseSelected.png",
+                                           CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
     
-    // 地面作成
-    auto groundBody = world->CreateBody(&groundBodyDef);
+	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
+                                origin.y + closeItem->getContentSize().height/2));
 
-
-
-    b2EdgeShape groundBox;
-
-
-    // bottom
-    groundBox.Set(b2Vec2(0, 0), b2Vec2(visibleSize.width/PTM_RATIO, 0));
-    groundBody->CreateFixture(&groundBox,0);
-
-
-    // top
-    groundBox.Set(b2Vec2(0, visibleSize.height/PTM_RATIO), b2Vec2(visibleSize.width/PTM_RATIO, visibleSize.height/PTM_RATIO));
-    groundBody->CreateFixture(&groundBox,0);
-     
-    // left
-    groundBox.Set(b2Vec2(0, visibleSize.height/PTM_RATIO), b2Vec2(0,0));
-    groundBody->CreateFixture(&groundBox,0);
-      
-    // right
-    groundBox.Set(b2Vec2(visibleSize.width/PTM_RATIO, visibleSize.height/PTM_RATIO), b2Vec2(visibleSize.width/PTM_RATIO, 0));
-    groundBody->CreateFixture(&groundBox,0);
-
-
+    // create menu, it's an autorelease object
+    auto menu = Menu::create(closeItem, NULL);
+    menu->setPosition(Vec2::ZERO);
+    this->addChild(menu, 1);
 
     /////////////////////////////
     // 3. add your codes below...
@@ -78,7 +59,7 @@ bool HelloWorld::init()
     auto label = LabelTTF::create("Hello World", "Arial", 24);
     
     // position the label on the center of the screen
-    label->setPosition(Point(origin.x + visibleSize.width/2,
+    label->setPosition(Vec2(origin.x + visibleSize.width/2,
                             origin.y + visibleSize.height - label->getContentSize().height));
 
     // add the label as a child to this layer
@@ -88,39 +69,25 @@ bool HelloWorld::init()
     auto sprite = Sprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
-    // sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
-
-
-
-    Point p = Point(sprite->getContentSize().width, visibleSize.height);
-
-    b2BodyDef bodyDef;
-    bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(p.x/PTM_RATIO, p.y/PTM_RATIO);
-    bodyDef.userData = sprite;
     
-    b2Body *body = world->CreateBody(&bodyDef);
-
-    // Define another box shape for our dynamic body.
-    b2PolygonShape dynamicBox;
-    dynamicBox.SetAsBox(.5f, .5f);//These are mid points for our 1m box
     
-    // Define the dynamic body fixture.
-    b2FixtureDef fixtureDef;
-    fixtureDef.shape = &dynamicBox;
-    fixtureDef.density = 1.0f;
-    fixtureDef.friction = 0.3f;
-    body->CreateFixture(&fixtureDef);
-
-
-
-    CCLOG("update");
-    this->scheduleUpdate();
+    auto btn = ControlButton::create("test", "Arial", 24);
+    btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 50));
+    btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+    this->addChild(btn, 2);
     
     return true;
+}
+
+void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
+{
+    CCLOG("testAction");
+    auto scene = ScrollTest::createScene();
+    Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
 }
 
 
@@ -136,19 +103,4 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
-}
-
-void HelloWorld::update(float f)
-{
-    CCLOG("update");
-    world->Step(f, 8, 1);
-    /*
-    for (b2Body* b = world->GetBodyList(); b; b = b->GetNext()) {
-        if (b->GetUserData() != NULL) {
-            Sprite* myActor = (Sprite*)b->GetUserData();
-            myActor->setPosition( Point( b->GetPosition().x * PTM_RATIO, b->GetPosition().y * PTM_RATIO) );
-            myActor->setRotation( -1 * CC_RADIANS_TO_DEGREES(b->GetAngle()) );
-        }
-    }
-    */
 }
