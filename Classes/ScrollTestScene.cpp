@@ -175,6 +175,7 @@ Node* ScrollTest::create9Sprite(float w, float h)
 {
     auto button = ui::Button::create("HelloWorld.png");
     button->setTitleText("Demo");
+    button->addTouchEventListener(CC_CALLBACK_2(ScrollTest::testClick, this));
     button->setPosition(Point(w, h));
     
     return button;
@@ -193,4 +194,19 @@ Node* ScrollTest::create9Sprite(float w, float h)
 void ScrollTest::backAction(Ref* pSender, Control::EventType controlEvent)
 {
     Director::getInstance()->popScene();
+}
+
+void ScrollTest::testClick(Ref* pSender, ui::Widget::TouchEventType type)
+{
+    switch (type)
+    {
+        case ui::Widget::TouchEventType::BEGAN:
+            break;
+        case ui::Widget::TouchEventType::ENDED:
+            CCLOG("test click");
+            break;
+        default:
+            break;
+    }
+
 }
