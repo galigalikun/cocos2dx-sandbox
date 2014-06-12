@@ -64,13 +64,29 @@ bool ScrollTest::init()
     this->addChild(btn, 2);
     
     
+
+    
+    
+    auto scrollView = ui::ScrollView::create();
+    scrollView->setSize(Size(visibleSize.width, visibleSize.height - 100));
+    scrollView->setPosition(Point::ZERO);
+    scrollView->setInnerContainerSize(Size(scrollView->getSize().width, 2000));
+    scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
+    this->addChild(scrollView, 3);
+    
+    
     auto continerLayer = Layer::create();
     continerLayer->setContentSize(Size(visibleSize.width, 2000));
     continerLayer->setPosition(Point(0,0));
     for (int i = 0; i < 10; i++) {
-        continerLayer->addChild(this->create9Sprite(visibleSize.width/2 + origin.x, i*200+100));
+        scrollView->addChild(this->create9Sprite(visibleSize.width/2 + origin.x, i*200+100));
+        // continerLayer->addChild(this->create9Sprite(visibleSize.width/2 + origin.x, i*200+100));
     }
     
+    scrollView->addChild(continerLayer);
+    
+    
+    /*
     mScrollView = ScrollView::create();
     mScrollView->setViewSize(Size(visibleSize.width, visibleSize.height - 100));
     mScrollView->setPosition(0, 0);
@@ -78,8 +94,11 @@ bool ScrollTest::init()
     mScrollView->setDirection(ScrollView::Direction::VERTICAL);
     mScrollView->setDelegate(this);
     this->addChild(mScrollView, 3);
+     */
     
     
+    
+    /*
     auto listener = EventListenerTouchOneByOne::create();
     listener->setSwallowTouches(true);
     listener->onTouchBegan = CC_CALLBACK_2(ScrollTest::onTouchBegan, this);
@@ -89,11 +108,11 @@ bool ScrollTest::init()
     listener->onTouchEnded = CC_CALLBACK_2(ScrollTest::onTouchEnded, this);
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-    
+    */
     
     return true;
 }
-
+/*
 bool ScrollTest::onTouchBegan(Touch* touch, Event* event)
 {
     return true;
@@ -106,8 +125,8 @@ void ScrollTest::onTouchMoved(Touch* touch, Event* event)
 
 void ScrollTest::onTouchEnded(Touch* touch, Event* event)
 {
+    CCLOG("onTouchEnded");
     mScrollView->unscheduleAllSelectors();
-    /*
     int offset =  x % 200;
     int num    =  x / 200;
     Point adjustPos;
@@ -137,25 +156,9 @@ void ScrollTest::onTouchEnded(Touch* touch, Event* event)
     
     adjustAnimDelay=0.7;
     mScrollView->setContentOffsetInDuration(adjustPos, adjustAnimDelay);
-     */
+
 }
 
-Node* ScrollTest::create9Sprite(float w, float h)
-{
-    auto sprite9 = Scale9Sprite::create("HelloWorld.png");
-    auto label = LabelTTF::create("Demo","Arial",50);
-    
-    auto btn = ControlButton::create(label, sprite9);
-    btn->setPreferredSize(sprite9->getContentSize());
-    btn->setPosition(Point(w, h));
-    
-    return btn;
-}
-
-void ScrollTest::backAction(Ref* pSender, Control::EventType controlEvent)
-{
-    Director::getInstance()->popScene();
-}
 
 void ScrollTest::scrollViewDidScroll(ScrollView* view)
 {
@@ -165,4 +168,29 @@ void ScrollTest::scrollViewDidScroll(ScrollView* view)
 void ScrollTest::scrollViewDidZoom(ScrollView* view)
 {
     
+}
+*/
+
+Node* ScrollTest::create9Sprite(float w, float h)
+{
+    auto button = ui::Button::create("HelloWorld.png");
+    button->setTitleText("Demo");
+    button->setPosition(Point(w, h));
+    
+    return button;
+    /*
+    auto sprite9 = Scale9Sprite::create("HelloWorld.png");
+    auto label = LabelTTF::create("Demo","Arial",50);
+    
+    auto btn = ControlButton::create(label, sprite9);
+    btn->setPreferredSize(sprite9->getContentSize());
+    btn->setPosition(Point(w, h));
+    
+    return btn;
+     */
+}
+
+void ScrollTest::backAction(Ref* pSender, Control::EventType controlEvent)
+{
+    Director::getInstance()->popScene();
 }
