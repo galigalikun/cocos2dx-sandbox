@@ -63,6 +63,20 @@
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 514C8D42194947340066AD90 /* ScrollTestScene.cpp */; };
+		51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */; };
+		51FD3847194EDD1E00FBAC6F /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3846194EDD1E00FBAC6F /* sliderProgress.png */; };
+		51FD384E194EDF8400FBAC6F /* check_box_active_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3848194EDF8400FBAC6F /* check_box_active_disable.png */; };
+		51FD384F194EDF8400FBAC6F /* check_box_active_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3849194EDF8400FBAC6F /* check_box_active_press.png */; };
+		51FD3850194EDF8400FBAC6F /* check_box_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD384A194EDF8400FBAC6F /* check_box_active.png */; };
+		51FD3851194EDF8400FBAC6F /* check_box_normal_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD384B194EDF8400FBAC6F /* check_box_normal_disable.png */; };
+		51FD3852194EDF8400FBAC6F /* check_box_normal_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD384C194EDF8400FBAC6F /* check_box_normal_press.png */; };
+		51FD3853194EDF8400FBAC6F /* check_box_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD384D194EDF8400FBAC6F /* check_box_normal.png */; };
+		51FD3856194EE0B500FBAC6F /* sliderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3854194EE0B500FBAC6F /* sliderTrack.png */; };
+		51FD3857194EE0B500FBAC6F /* sliderTrack2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3855194EE0B500FBAC6F /* sliderTrack2.png */; };
+		51FD3859194EE0BF00FBAC6F /* sliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3858194EE0BF00FBAC6F /* sliderThumb.png */; };
+		51FD385C194EE2E400FBAC6F /* sliderballnormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD385A194EE2E400FBAC6F /* sliderballnormal.png */; };
+		51FD385D194EE2E400FBAC6F /* sliderballpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD385B194EE2E400FBAC6F /* sliderballpressed.png */; };
+		51FD3861194EE47D00FBAC6F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FD3860194EE47D00FBAC6F /* MediaPlayer.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -263,6 +277,23 @@
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		514C8D42194947340066AD90 /* ScrollTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollTestScene.cpp; path = ../Classes/ScrollTestScene.cpp; sourceTree = "<group>"; };
 		514C8D43194947340066AD90 /* ScrollTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollTestScene.h; path = ../Classes/ScrollTestScene.h; sourceTree = "<group>"; };
+		51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PageTestScene.cpp; path = ../Classes/PageTestScene.cpp; sourceTree = "<group>"; };
+		51FD3842194EC9B000FBAC6F /* PageTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageTestScene.h; path = ../Classes/PageTestScene.h; sourceTree = "<group>"; };
+		51FD3846194EDD1E00FBAC6F /* sliderProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderProgress.png; sourceTree = "<group>"; };
+		51FD3848194EDF8400FBAC6F /* check_box_active_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_active_disable.png; sourceTree = "<group>"; };
+		51FD3849194EDF8400FBAC6F /* check_box_active_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_active_press.png; sourceTree = "<group>"; };
+		51FD384A194EDF8400FBAC6F /* check_box_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_active.png; sourceTree = "<group>"; };
+		51FD384B194EDF8400FBAC6F /* check_box_normal_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_normal_disable.png; sourceTree = "<group>"; };
+		51FD384C194EDF8400FBAC6F /* check_box_normal_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_normal_press.png; sourceTree = "<group>"; };
+		51FD384D194EDF8400FBAC6F /* check_box_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_normal.png; sourceTree = "<group>"; };
+		51FD3854194EE0B500FBAC6F /* sliderTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderTrack.png; sourceTree = "<group>"; };
+		51FD3855194EE0B500FBAC6F /* sliderTrack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderTrack2.png; sourceTree = "<group>"; };
+		51FD3858194EE0BF00FBAC6F /* sliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderThumb.png; sourceTree = "<group>"; };
+		51FD385A194EE2E400FBAC6F /* sliderballnormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderballnormal.png; sourceTree = "<group>"; };
+		51FD385B194EE2E400FBAC6F /* sliderballpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderballpressed.png; sourceTree = "<group>"; };
+		51FD385E194EE47000FBAC6F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		51FD3860194EE47D00FBAC6F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		51FD3862194EE4E400FBAC6F /* cocosvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cocosvideo.mp4; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -277,6 +308,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FD3861194EE47D00FBAC6F /* MediaPlayer.framework in Frameworks */,
 				1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */,
 				1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */,
@@ -345,6 +377,8 @@
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 				514C8D42194947340066AD90 /* ScrollTestScene.cpp */,
 				514C8D43194947340066AD90 /* ScrollTestScene.h */,
+				51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */,
+				51FD3842194EC9B000FBAC6F /* PageTestScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -393,6 +427,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51FD3860194EE47D00FBAC6F /* MediaPlayer.framework */,
+				51FD385E194EE47000FBAC6F /* CoreVideo.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
 				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
 				503AE11117EB99EE00D1A890 /* libcurl.dylib */,
@@ -463,6 +499,19 @@
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
+				51FD3846194EDD1E00FBAC6F /* sliderProgress.png */,
+				51FD3848194EDF8400FBAC6F /* check_box_active_disable.png */,
+				51FD3849194EDF8400FBAC6F /* check_box_active_press.png */,
+				51FD384A194EDF8400FBAC6F /* check_box_active.png */,
+				51FD384B194EDF8400FBAC6F /* check_box_normal_disable.png */,
+				51FD384C194EDF8400FBAC6F /* check_box_normal_press.png */,
+				51FD384D194EDF8400FBAC6F /* check_box_normal.png */,
+				51FD3854194EE0B500FBAC6F /* sliderTrack.png */,
+				51FD3855194EE0B500FBAC6F /* sliderTrack2.png */,
+				51FD3858194EE0BF00FBAC6F /* sliderThumb.png */,
+				51FD385A194EE2E400FBAC6F /* sliderballnormal.png */,
+				51FD385B194EE2E400FBAC6F /* sliderballpressed.png */,
+				51FD3862194EE4E400FBAC6F /* cocosvideo.mp4 */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -632,23 +681,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FD3856194EE0B500FBAC6F /* sliderTrack.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				51FD384F194EDF8400FBAC6F /* check_box_active_press.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
+				51FD3847194EDD1E00FBAC6F /* sliderProgress.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				51FD3851194EDF8400FBAC6F /* check_box_normal_disable.png in Resources */,
+				51FD384E194EDF8400FBAC6F /* check_box_active_disable.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
+				51FD3859194EE0BF00FBAC6F /* sliderThumb.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
+				51FD3850194EDF8400FBAC6F /* check_box_active.png in Resources */,
+				51FD3853194EDF8400FBAC6F /* check_box_normal.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				51FD385C194EE2E400FBAC6F /* sliderballnormal.png in Resources */,
+				51FD3852194EDF8400FBAC6F /* check_box_normal_press.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				51FD3857194EE0B500FBAC6F /* sliderTrack2.png in Resources */,
+				51FD385D194EE2E400FBAC6F /* sliderballpressed.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
@@ -673,6 +734,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */,
 				514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,

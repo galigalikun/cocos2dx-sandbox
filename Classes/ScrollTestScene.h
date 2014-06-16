@@ -2,7 +2,7 @@
 #define __SCROLLTEST_SCENE_H__
 
 #include "cocos2d.h"
-#include "cocos-ext.h"
+#include "extensions/cocos-ext.h"
 #include "ui/CocosGUI.h"
 
 class ScrollTest : public cocos2d::Layer

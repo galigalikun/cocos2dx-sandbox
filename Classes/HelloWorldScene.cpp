@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "ScrollTestScene.h"
+#include "PageTestScene.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -75,19 +76,47 @@ bool HelloWorld::init()
     this->addChild(sprite, 0);
     
     
-    auto btn = ControlButton::create("test", "Arial", 24);
-    btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 50));
-    btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
-    this->addChild(btn, 2);
+    {
+        auto btn = ControlButton::create("scrollview", "Arial", 24);
+        btn->setTag(1);
+        btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 50));
+        btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+        this->addChild(btn, 2);
+    }
+    
+    {
+        auto btn = ControlButton::create("bannerview", "Arial", 24);
+        btn->setTag(2);
+        btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 150));
+        btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+        this->addChild(btn, 2);
+    }
+
     
     return true;
 }
 
 void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
 {
-    CCLOG("testAction");
-    auto scene = ScrollTest::createScene();
-    Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+    CCLOG("testAction:%d", static_cast<ControlButton*>(pSender)->getTag());
+    switch (static_cast<ControlButton*>(pSender)->getTag()) {
+        case 2:
+        {
+            auto scene = PageTest::createScene();
+            Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+
+            break;
+        }
+        case 1:
+        {
+            auto scene = ScrollTest::createScene();
+            Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            break;
+        }
+        default:
+            break;
+    }
+
 }
 
 
