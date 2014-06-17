@@ -72,6 +72,7 @@ bool ScrollTest::init()
     scrollView->setPosition(Point::ZERO);
     scrollView->setInnerContainerSize(Size(scrollView->getSize().width, 2000));
     scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
+    scrollView->addEventListener(CC_CALLBACK_2(ScrollTest::scrollEvent, this));
     this->addChild(scrollView, 3);
     
     
@@ -209,4 +210,13 @@ void ScrollTest::testClick(Ref* pSender, ui::Widget::TouchEventType type)
             break;
     }
 
+}
+
+
+void ScrollTest::scrollEvent(Ref* pSender, ui::ScrollView::EventType type)
+{
+    if(type == ui::ScrollView::EventType::SCROLLING) {
+        auto scrollView = dynamic_cast<ui::ScrollView*>(pSender);
+        // CCLOG("scrollEvent:%d", scrollView->getPercent());
+    }
 }

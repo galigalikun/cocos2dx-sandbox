@@ -77,6 +77,7 @@
 		51FD385C194EE2E400FBAC6F /* sliderballnormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD385A194EE2E400FBAC6F /* sliderballnormal.png */; };
 		51FD385D194EE2E400FBAC6F /* sliderballpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD385B194EE2E400FBAC6F /* sliderballpressed.png */; };
 		51FD3861194EE47D00FBAC6F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FD3860194EE47D00FBAC6F /* MediaPlayer.framework */; };
+		51FD3865194EFA7200FBAC6F /* VideoTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51FD3863194EFA7200FBAC6F /* VideoTestScene.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -294,6 +295,8 @@
 		51FD385E194EE47000FBAC6F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		51FD3860194EE47D00FBAC6F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		51FD3862194EE4E400FBAC6F /* cocosvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cocosvideo.mp4; sourceTree = "<group>"; };
+		51FD3863194EFA7200FBAC6F /* VideoTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoTestScene.cpp; path = ../Classes/VideoTestScene.cpp; sourceTree = "<group>"; };
+		51FD3864194EFA7200FBAC6F /* VideoTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTestScene.h; path = ../Classes/VideoTestScene.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -379,6 +382,8 @@
 				514C8D43194947340066AD90 /* ScrollTestScene.h */,
 				51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */,
 				51FD3842194EC9B000FBAC6F /* PageTestScene.h */,
+				51FD3863194EFA7200FBAC6F /* VideoTestScene.cpp */,
+				51FD3864194EFA7200FBAC6F /* VideoTestScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -733,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FD3865194EFA7200FBAC6F /* VideoTestScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */,
 				514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */,

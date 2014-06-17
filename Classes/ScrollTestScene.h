@@ -34,6 +34,7 @@ public:
     
     void backAction(cocos2d::Ref*, cocos2d::extension::Control::EventType);
     void testClick(cocos2d::Ref*, cocos2d::ui::Widget::TouchEventType);
+    void scrollEvent(cocos2d::Ref* , cocos2d::ui::ScrollView::EventType);
     
     // implement the "static create()" method manually
     CREATE_FUNC(ScrollTest);

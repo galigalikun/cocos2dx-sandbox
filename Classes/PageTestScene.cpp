@@ -88,17 +88,6 @@ bool PageTest::init()
     
     
     
-    auto videoPlayer = experimental::ui::VideoPlayer::create();
-    videoPlayer->setPosition(Vec2(visibleSize.width / 2.0f, visibleSize.height - 400));
-    videoPlayer->setContentSize(Size(visibleSize.width, visibleSize.height));
-    // videoPlayer->setURL("");
-    videoPlayer->setFileName("cocosvideo.mp4");
-    videoPlayer->play();
-    this->addChild(videoPlayer);
-    
-    
-    
-    
     auto pageView = ui::PageView::create();
     
     pageView->setSize(Size(visibleSize.width, 130.0f));

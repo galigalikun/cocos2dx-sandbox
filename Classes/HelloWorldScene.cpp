@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "ScrollTestScene.h"
 #include "PageTestScene.h"
+#include "VideoTestScene.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -92,6 +93,21 @@ bool HelloWorld::init()
         this->addChild(btn, 2);
     }
 
+    {
+        auto btn = ControlButton::create("videoview", "Arial", 24);
+        btn->setTag(3);
+        btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 250));
+        btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+        this->addChild(btn, 2);
+    }
+    
+    {
+        auto btn = ControlButton::create("labelview", "Arial", 24);
+        btn->setTag(4);
+        btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 350));
+        btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+        this->addChild(btn, 2);
+    }
     
     return true;
 }
@@ -100,6 +116,13 @@ void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
 {
     CCLOG("testAction:%d", static_cast<ControlButton*>(pSender)->getTag());
     switch (static_cast<ControlButton*>(pSender)->getTag()) {
+        case 3:
+        {
+            auto scene = VideoTest::createScene();
+            Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            
+            break;
+        }
         case 2:
         {
             auto scene = PageTest::createScene();
