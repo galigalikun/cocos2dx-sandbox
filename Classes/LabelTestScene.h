@@ -11,6 +11,8 @@
 
 #include "cocos2d.h"
 #include "extensions/cocos-ext.h"
+// #include "cocosbuilder/CocosBuilder.h"
+#include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 
 class LabelTest : public cocos2d::Layer
