@@ -63,6 +63,8 @@
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 514C8D42194947340066AD90 /* ScrollTestScene.cpp */; };
+		519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */; };
+		519B9E091951714C001C5A8B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E081951714C001C5A8B /* fonts */; };
 		51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */; };
 		51FD3847194EDD1E00FBAC6F /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3846194EDD1E00FBAC6F /* sliderProgress.png */; };
 		51FD384E194EDF8400FBAC6F /* check_box_active_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3848194EDF8400FBAC6F /* check_box_active_disable.png */; };
@@ -278,6 +280,9 @@
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		514C8D42194947340066AD90 /* ScrollTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollTestScene.cpp; path = ../Classes/ScrollTestScene.cpp; sourceTree = "<group>"; };
 		514C8D43194947340066AD90 /* ScrollTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollTestScene.h; path = ../Classes/ScrollTestScene.h; sourceTree = "<group>"; };
+		519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LabelTestScene.cpp; path = ../Classes/LabelTestScene.cpp; sourceTree = "<group>"; };
+		519B9E0119516AD3001C5A8B /* LabelTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelTestScene.h; path = ../Classes/LabelTestScene.h; sourceTree = "<group>"; };
+		519B9E081951714C001C5A8B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PageTestScene.cpp; path = ../Classes/PageTestScene.cpp; sourceTree = "<group>"; };
 		51FD3842194EC9B000FBAC6F /* PageTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageTestScene.h; path = ../Classes/PageTestScene.h; sourceTree = "<group>"; };
 		51FD3846194EDD1E00FBAC6F /* sliderProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderProgress.png; sourceTree = "<group>"; };
@@ -384,6 +389,8 @@
 				51FD3842194EC9B000FBAC6F /* PageTestScene.h */,
 				51FD3863194EFA7200FBAC6F /* VideoTestScene.cpp */,
 				51FD3864194EFA7200FBAC6F /* VideoTestScene.h */,
+				519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */,
+				519B9E0119516AD3001C5A8B /* LabelTestScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -501,6 +508,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				519B9E081951714C001C5A8B /* fonts */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -701,6 +709,7 @@
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				51FD3859194EE0BF00FBAC6F /* sliderThumb.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				519B9E091951714C001C5A8B /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
@@ -743,6 +752,7 @@
 				51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */,
 				514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,

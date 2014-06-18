@@ -2,6 +2,7 @@
 #include "ScrollTestScene.h"
 #include "PageTestScene.h"
 #include "VideoTestScene.h"
+#include "LabelTestScene.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -116,6 +117,13 @@ void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
 {
     CCLOG("testAction:%d", static_cast<ControlButton*>(pSender)->getTag());
     switch (static_cast<ControlButton*>(pSender)->getTag()) {
+        case 4:
+        {
+            auto scene = LabelTest::createScene();
+            Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            
+            break;
+        }
         case 3:
         {
             auto scene = VideoTest::createScene();
