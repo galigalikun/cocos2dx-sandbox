@@ -4,6 +4,7 @@
 #include "VideoTestScene.h"
 #include "LabelTestScene.h"
 #include "NetworkTestScene.h"
+#include "WebViewTestScene.h"
 #include "AdGenerationModule.h"
 
 
@@ -121,6 +122,14 @@ bool HelloWorld::init()
         this->addChild(btn, 5);
     }
     
+    {
+        auto btn = ControlButton::create("webview", "Arial", 24);
+        btn->setTag(6);
+        btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 550));
+        btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+        this->addChild(btn, 6);
+    }
+    
     AdGenerationModule::createViewBottom("aid", AdGenerationModule::AdType::SP_320x50);
     AdGenerationModule::showView();
     
@@ -131,6 +140,13 @@ void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
 {
     CCLOG("testAction:%d", static_cast<ControlButton*>(pSender)->getTag());
     switch (static_cast<ControlButton*>(pSender)->getTag()) {
+        case 6:
+        {
+            auto scene = WebViewTest::createScene();
+            Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            
+            break;
+        }
         case 5:
         {
             auto scene = NetworkTest::createScene();

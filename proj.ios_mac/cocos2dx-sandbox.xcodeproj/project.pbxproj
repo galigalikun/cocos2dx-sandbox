@@ -62,6 +62,8 @@
 		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
+		5107DACD195415D9002F32A1 /* UIWebViewOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5107DACB195415D9002F32A1 /* UIWebViewOS.mm */; };
+		5107DAD2195417F2002F32A1 /* WebViewTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5107DAD0195417F2002F32A1 /* WebViewTestScene.cpp */; };
 		514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 514C8D42194947340066AD90 /* ScrollTestScene.cpp */; };
 		515100401953D04700F65B99 /* NetworkTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5151003E1953D04700F65B99 /* NetworkTestScene.cpp */; };
 		519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */; };
@@ -287,6 +289,10 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		5107DACA195415D9002F32A1 /* UIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebView.h; sourceTree = "<group>"; };
+		5107DACB195415D9002F32A1 /* UIWebViewOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIWebViewOS.mm; sourceTree = "<group>"; };
+		5107DAD0195417F2002F32A1 /* WebViewTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebViewTestScene.cpp; path = ../Classes/WebViewTestScene.cpp; sourceTree = "<group>"; };
+		5107DAD1195417F2002F32A1 /* WebViewTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewTestScene.h; path = ../Classes/WebViewTestScene.h; sourceTree = "<group>"; };
 		514C8D42194947340066AD90 /* ScrollTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollTestScene.cpp; path = ../Classes/ScrollTestScene.cpp; sourceTree = "<group>"; };
 		514C8D43194947340066AD90 /* ScrollTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollTestScene.h; path = ../Classes/ScrollTestScene.h; sourceTree = "<group>"; };
 		5151003E1953D04700F65B99 /* NetworkTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetworkTestScene.cpp; path = ../Classes/NetworkTestScene.cpp; sourceTree = "<group>"; };
@@ -430,6 +436,8 @@
 				51C90A2C1952B438007234FB /* AdGenerationModule.h */,
 				5151003E1953D04700F65B99 /* NetworkTestScene.cpp */,
 				5151003F1953D04700F65B99 /* NetworkTestScene.h */,
+				5107DAD0195417F2002F32A1 /* WebViewTestScene.cpp */,
+				5107DAD1195417F2002F32A1 /* WebViewTestScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -471,6 +479,7 @@
 				503AE10617EB990700D1A890 /* mac */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				78C7DDAA14EBA5050085D0C2 /* Resources */,
+				5107DAC7195415D9002F32A1 /* libs */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -548,6 +557,24 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		5107DAC7195415D9002F32A1 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5107DAC8195415D9002F32A1 /* webview */,
+			);
+			name = libs;
+			path = ../libs;
+			sourceTree = "<group>";
+		};
+		5107DAC8195415D9002F32A1 /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				5107DACA195415D9002F32A1 /* UIWebView.h */,
+				5107DACB195415D9002F32A1 /* UIWebViewOS.mm */,
+			);
+			path = webview;
+			sourceTree = "<group>";
 		};
 		51C90A311952B457007234FB /* ADG_iOSSDK */ = {
 			isa = PBXGroup;
@@ -815,12 +842,14 @@
 				51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */,
 				514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */,
 				51C90A301952B442007234FB /* AdGenerationModule.mm in Sources */,
+				5107DAD2195417F2002F32A1 /* WebViewTestScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				515100401953D04700F65B99 /* NetworkTestScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
+				5107DACD195415D9002F32A1 /* UIWebViewOS.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
