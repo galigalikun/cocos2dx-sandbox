@@ -188,9 +188,10 @@ WebView::~WebView()
 }
 
 
-void WebView::setFileName(const std::string& fileName)
+void WebView::setHtml(const std::string& html)
 {
-    // todo
+    _html = html;
+    [((UIWebViewWrapperIos*)_webView) loadData:_html];
 }
 
 

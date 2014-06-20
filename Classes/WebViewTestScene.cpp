@@ -46,7 +46,8 @@ bool WebViewTest::init()
     webView->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
     webView->setContentSize(Size(visibleSize.width, visibleSize.height));
     webView->setOpenDomains({"github.io"});
-    webView->setURL("http://dev.xperia.biz/webview.html");
+    // webView->setURL("http://dev.xperia.biz/webview.html");
+    webView->setHtml("<html><head></head><body>aaaaaa</body></html>");
     webView->addEventListener([this](Ref* sender, galigalikun::ui::WebView::EventType eventType){
         CCLOG("callback");
     });

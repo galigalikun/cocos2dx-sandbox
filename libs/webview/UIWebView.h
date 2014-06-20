@@ -23,8 +23,8 @@ namespace galigalikun {
             CREATE_FUNC(WebView);
 
             //Sets local file[support assets' file on android] as a video source for VideoPlayer
-            virtual void setFileName(const std::string&);
-            virtual const std::string& getFileName() const { return _file;}
+            virtual void setHtml(const std::string&);
+            virtual const std::string& getHtml() const { return _html;}
 
             virtual void setURL(const std::string&);
             virtual const std::string& getURL() const { return _url;}
@@ -43,7 +43,7 @@ namespace galigalikun {
             WebView();
             virtual ~WebView();
 
-            std::string _file;
+            std::string _html;
             std::string _url;
             std::vector<std::string> _openDomains;
 
