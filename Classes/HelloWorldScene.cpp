@@ -3,6 +3,7 @@
 #include "PageTestScene.h"
 #include "VideoTestScene.h"
 #include "LabelTestScene.h"
+#include "NetworkTestScene.h"
 #include "AdGenerationModule.h"
 
 
@@ -74,7 +75,7 @@ bool HelloWorld::init()
     auto sprite = Sprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, sprite->getContentSize().height/2));
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
@@ -85,7 +86,7 @@ bool HelloWorld::init()
         btn->setTag(1);
         btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 50));
         btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
-        this->addChild(btn, 2);
+        this->addChild(btn, 1);
     }
     
     {
@@ -101,7 +102,7 @@ bool HelloWorld::init()
         btn->setTag(3);
         btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 250));
         btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
-        this->addChild(btn, 2);
+        this->addChild(btn, 3);
     }
     
     {
@@ -109,9 +110,16 @@ bool HelloWorld::init()
         btn->setTag(4);
         btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 350));
         btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
-        this->addChild(btn, 2);
+        this->addChild(btn, 4);
     }
     
+    {
+        auto btn = ControlButton::create("network", "Arial", 24);
+        btn->setTag(5);
+        btn->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height - btn->getContentSize().height - 450));
+        btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
+        this->addChild(btn, 5);
+    }
     
     AdGenerationModule::createViewBottom("aid", AdGenerationModule::AdType::SP_320x50);
     AdGenerationModule::showView();
@@ -123,6 +131,13 @@ void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
 {
     CCLOG("testAction:%d", static_cast<ControlButton*>(pSender)->getTag());
     switch (static_cast<ControlButton*>(pSender)->getTag()) {
+        case 5:
+        {
+            auto scene = NetworkTest::createScene();
+            Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            
+            break;
+        }
         case 4:
         {
             auto scene = LabelTest::createScene();

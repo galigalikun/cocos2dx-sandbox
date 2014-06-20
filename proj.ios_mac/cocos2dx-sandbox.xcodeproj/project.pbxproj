@@ -63,6 +63,7 @@
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 514C8D42194947340066AD90 /* ScrollTestScene.cpp */; };
+		515100401953D04700F65B99 /* NetworkTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5151003E1953D04700F65B99 /* NetworkTestScene.cpp */; };
 		519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */; };
 		519B9E091951714C001C5A8B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E081951714C001C5A8B /* fonts */; };
 		519B9E0B1951784F001C5A8B /* cocosui in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E0A1951784F001C5A8B /* cocosui */; };
@@ -288,6 +289,8 @@
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		514C8D42194947340066AD90 /* ScrollTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollTestScene.cpp; path = ../Classes/ScrollTestScene.cpp; sourceTree = "<group>"; };
 		514C8D43194947340066AD90 /* ScrollTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollTestScene.h; path = ../Classes/ScrollTestScene.h; sourceTree = "<group>"; };
+		5151003E1953D04700F65B99 /* NetworkTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetworkTestScene.cpp; path = ../Classes/NetworkTestScene.cpp; sourceTree = "<group>"; };
+		5151003F1953D04700F65B99 /* NetworkTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkTestScene.h; path = ../Classes/NetworkTestScene.h; sourceTree = "<group>"; };
 		519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LabelTestScene.cpp; path = ../Classes/LabelTestScene.cpp; sourceTree = "<group>"; };
 		519B9E0119516AD3001C5A8B /* LabelTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelTestScene.h; path = ../Classes/LabelTestScene.h; sourceTree = "<group>"; };
 		519B9E081951714C001C5A8B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
@@ -425,6 +428,8 @@
 				519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */,
 				519B9E0119516AD3001C5A8B /* LabelTestScene.h */,
 				51C90A2C1952B438007234FB /* AdGenerationModule.h */,
+				5151003E1953D04700F65B99 /* NetworkTestScene.cpp */,
+				5151003F1953D04700F65B99 /* NetworkTestScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -813,6 +818,7 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				515100401953D04700F65B99 /* NetworkTestScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 			);
