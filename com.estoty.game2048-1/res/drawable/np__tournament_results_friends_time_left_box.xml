@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/np__tournament_results_time_left_box" />
-    <corners android:radius="@dimen/np__tournament_results_friends_time_left_box_radius_size" />
-    <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
-</shape>

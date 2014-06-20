@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="NP__BaseTheme" parent="@*android:style/Theme.Holo.Light">
-        <item name="android:windowActionBar">false</item>
-    </style>
-    <style name="NP__.Theme.Dialog" parent="@style/NP__Theme.DialogBase">
-        <item name="android:windowActionBar">false</item>
-    </style>
-</resources>
