@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/np__rank_tile_horizontal_list_image_container" android:paddingRight="@dimen/np__ranks_display_list_image_badge_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/np__rank_tile_horizontal_list_image_view" android:layout_width="@dimen/np__ranks_display_list_avatar_size" android:layout_height="@dimen/np__ranks_display_list_avatar_size" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/np__application_name" />
+        <View android:id="@id/np__rank_tile_horizontal_list_image_view_border" android:background="@drawable/np__notification_rank_list_current_user_avatar" android:visibility="gone" android:layout_width="@dimen/np__ranks_display_list_avatar_size" android:layout_height="@dimen/np__ranks_display_list_avatar_size" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/np__white" android:gravity="center" android:id="@id/np__rank_tile_horizontal_list_player_rank" android:background="@drawable/np__notification_rank_list_badge" android:layout_width="@dimen/np__ranks_display_list_badge_size" android:layout_height="@dimen/np__ranks_display_list_badge_size" android:text="@string/np__place_holder_number" android:lines="1" android:layout_alignRight="@id/np__rank_tile_horizontal_list_image_container" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/np__content_rectangle_radius_size" />
+    <stroke android:width="1.0px" android:color="@color/np__tournament_results_peer_text_score_frame" />
+    <solid android:color="@color/np__white" />
+</shape>

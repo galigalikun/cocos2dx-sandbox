@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/np__popup_vertical_scroller" android:background="@drawable/np__widget_popup_background" android:scrollbars="none" android:fadingEdgeLength="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/np__popup_vertical_tracks" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

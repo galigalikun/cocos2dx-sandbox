@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:id="@id/np__dialog_question_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/np__error_message_failed_to_change_name_title" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:drawableLeft="@drawable/np__ic_dialog_error" android:marqueeRepeatLimit="marquee_forever" style="@style/NP__.DialogWindowTitle" />
+    <TextView android:id="@id/np__dialog_question_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/np__content_margin" android:text="@string/np__error_message_failed_to_change_name_description" style="@style/NP__.Widget.Text.Content.Medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <Button android:id="@id/np__dialog_question_button_report_to_support" android:background="@drawable/np__widget_button_negative_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/np__widget_button_margin" android:text="@string/np__dialog_alert_report_to_support" android:layout_weight="0.5" style="@style/NP__.Widget.Button" />
+        <Button android:id="@id/np__dialog_question_button_confirm" android:background="@drawable/np__widget_button_positive_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/np__widget_button_margin" android:text="@string/np__dialog_alert_confirm" android:layout_weight="0.5" style="@style/NP__.Widget.Button" />
+    </LinearLayout>
+</LinearLayout>

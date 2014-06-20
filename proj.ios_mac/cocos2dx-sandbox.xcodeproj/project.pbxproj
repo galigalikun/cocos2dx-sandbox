@@ -66,6 +66,13 @@
 		519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */; };
 		519B9E091951714C001C5A8B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E081951714C001C5A8B /* fonts */; };
 		519B9E0B1951784F001C5A8B /* cocosui in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E0A1951784F001C5A8B /* cocosui */; };
+		51C90A301952B442007234FB /* AdGenerationModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51C90A2F1952B442007234FB /* AdGenerationModule.mm */; };
+		51C90A3B1952B457007234FB /* libADG1.3.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3A1952B457007234FB /* libADG1.3.3.a */; };
+		51C90A3D1952B485007234FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3C1952B485007234FB /* SystemConfiguration.framework */; };
+		51C90A3F1952B48E007234FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3E1952B48E007234FB /* CoreTelephony.framework */; };
+		51C90A411952B495007234FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A401952B495007234FB /* Security.framework */; };
+		51C90A431952B49C007234FB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A421952B49C007234FB /* EventKit.framework */; };
+		51C90A451952B4A5007234FB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A441952B4A5007234FB /* AdSupport.framework */; };
 		51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */; };
 		51FD3847194EDD1E00FBAC6F /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3846194EDD1E00FBAC6F /* sliderProgress.png */; };
 		51FD384E194EDF8400FBAC6F /* check_box_active_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3848194EDF8400FBAC6F /* check_box_active_disable.png */; };
@@ -285,6 +292,22 @@
 		519B9E0119516AD3001C5A8B /* LabelTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelTestScene.h; path = ../Classes/LabelTestScene.h; sourceTree = "<group>"; };
 		519B9E081951714C001C5A8B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		519B9E0A1951784F001C5A8B /* cocosui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cocosui; sourceTree = "<group>"; };
+		51C90A2C1952B438007234FB /* AdGenerationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdGenerationModule.h; path = ../Classes/AdGenerationModule.h; sourceTree = "<group>"; };
+		51C90A2F1952B442007234FB /* AdGenerationModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AdGenerationModule.mm; path = ios/AdGenerationModule.mm; sourceTree = SOURCE_ROOT; };
+		51C90A321952B457007234FB /* ADGAdWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGAdWebView.h; sourceTree = "<group>"; };
+		51C90A331952B457007234FB /* ADGBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGBrowserViewController.h; sourceTree = "<group>"; };
+		51C90A341952B457007234FB /* ADGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGConstants.h; sourceTree = "<group>"; };
+		51C90A351952B457007234FB /* ADGInterstitialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGInterstitialManager.h; sourceTree = "<group>"; };
+		51C90A361952B457007234FB /* ADGManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGManagerViewController.h; sourceTree = "<group>"; };
+		51C90A371952B457007234FB /* ADGMraidController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGMraidController.h; sourceTree = "<group>"; };
+		51C90A381952B457007234FB /* ADGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGUtil.h; sourceTree = "<group>"; };
+		51C90A391952B457007234FB /* ADGVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGVideoViewController.h; sourceTree = "<group>"; };
+		51C90A3A1952B457007234FB /* libADG1.3.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libADG1.3.3.a; sourceTree = "<group>"; };
+		51C90A3C1952B485007234FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		51C90A3E1952B48E007234FB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		51C90A401952B495007234FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		51C90A421952B49C007234FB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		51C90A441952B4A5007234FB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PageTestScene.cpp; path = ../Classes/PageTestScene.cpp; sourceTree = "<group>"; };
 		51FD3842194EC9B000FBAC6F /* PageTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageTestScene.h; path = ../Classes/PageTestScene.h; sourceTree = "<group>"; };
 		51FD3846194EDD1E00FBAC6F /* sliderProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderProgress.png; sourceTree = "<group>"; };
@@ -318,11 +341,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C90A451952B4A5007234FB /* AdSupport.framework in Frameworks */,
+				51C90A431952B49C007234FB /* EventKit.framework in Frameworks */,
+				51C90A411952B495007234FB /* Security.framework in Frameworks */,
+				51C90A3F1952B48E007234FB /* CoreTelephony.framework in Frameworks */,
+				51C90A3D1952B485007234FB /* SystemConfiguration.framework in Frameworks */,
 				51FD3861194EE47D00FBAC6F /* MediaPlayer.framework in Frameworks */,
 				1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */,
 				1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */,
 				1AC6FB31180E99EB004C840B /* libcocos2dx-extensions iOS.a in Frameworks */,
+				51C90A3B1952B457007234FB /* libADG1.3.3.a in Frameworks */,
 				1AC6FB32180E99EB004C840B /* libCocosDenshion iOS.a in Frameworks */,
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -366,6 +395,7 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				51C90A311952B457007234FB /* ADG_iOSSDK */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -373,6 +403,7 @@
 				503AE0FD17EB989F00D1A890 /* Prefix.pch */,
 				503AE0FE17EB989F00D1A890 /* RootViewController.h */,
 				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
+				51C90A2F1952B442007234FB /* AdGenerationModule.mm */,
 			);
 			name = ios;
 			path = Classes;
@@ -393,6 +424,7 @@
 				51FD3864194EFA7200FBAC6F /* VideoTestScene.h */,
 				519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */,
 				519B9E0119516AD3001C5A8B /* LabelTestScene.h */,
+				51C90A2C1952B438007234FB /* AdGenerationModule.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -441,6 +473,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51C90A441952B4A5007234FB /* AdSupport.framework */,
+				51C90A421952B49C007234FB /* EventKit.framework */,
+				51C90A401952B495007234FB /* Security.framework */,
+				51C90A3E1952B48E007234FB /* CoreTelephony.framework */,
+				51C90A3C1952B485007234FB /* SystemConfiguration.framework */,
 				51FD3860194EE47D00FBAC6F /* MediaPlayer.framework */,
 				51FD385E194EE47000FBAC6F /* CoreVideo.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
@@ -505,6 +542,23 @@
 			);
 			name = Icons;
 			path = ios;
+			sourceTree = SOURCE_ROOT;
+		};
+		51C90A311952B457007234FB /* ADG_iOSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				51C90A321952B457007234FB /* ADGAdWebView.h */,
+				51C90A331952B457007234FB /* ADGBrowserViewController.h */,
+				51C90A341952B457007234FB /* ADGConstants.h */,
+				51C90A351952B457007234FB /* ADGInterstitialManager.h */,
+				51C90A361952B457007234FB /* ADGManagerViewController.h */,
+				51C90A371952B457007234FB /* ADGMraidController.h */,
+				51C90A381952B457007234FB /* ADGUtil.h */,
+				51C90A391952B457007234FB /* ADGVideoViewController.h */,
+				51C90A3A1952B457007234FB /* libADG1.3.3.a */,
+			);
+			name = ADG_iOSSDK;
+			path = ios/ADG_iOSSDK;
 			sourceTree = SOURCE_ROOT;
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
@@ -755,6 +809,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */,
 				514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */,
+				51C90A301952B442007234FB /* AdGenerationModule.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
@@ -854,7 +909,7 @@
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ios/ADG_iOSSDK";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -885,7 +940,7 @@
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ios/ADG_iOSSDK";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

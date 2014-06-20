@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/np__dialog_changeavatar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NP__.DialogWindowTitle">
+        <TextView android:id="@id/np__dialog_changeavatar_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/np__dialog_content_padding" android:text="@string/np__dialog_changeavatar_title" android:drawableLeft="@drawable/np__ic_dialog_change_avatar" android:layout_toLeftOf="@id/np__dialog_changeavatar_title_progressbar" style="@style/NP__.DialogWindowTitle.ChangeAvatar" />
+        <ProgressBar android:id="@id/np__dialog_changeavatar_title_progressbar" android:visibility="invisible" android:layout_width="@dimen/np__dialog_title_progressbar_size" android:layout_height="@dimen/np__dialog_title_progressbar_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <Button android:id="@id/np__dialog_changeavatar_button_positive" android:background="@drawable/np__widget_button_positive_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/np__widget_button_margin" android:text="@string/np__dialog_changeavatar_button_positive" android:drawableLeft="@drawable/np__ic_accept" android:layout_weight="0.5" style="@style/NP__.Widget.Button" />
+        <Button android:id="@id/np__dialog_changeavatar_button_negative" android:background="@drawable/np__widget_button_negative_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/np__widget_button_margin" android:text="@string/np__dialog_changeavatar_button_negative" android:drawableLeft="@drawable/np__ic_cancel" android:layout_weight="0.5" style="@style/NP__.Widget.Button" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/np__dialog_changeavatar_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/np__rank_solo_image_container" android:paddingBottom="@dimen/np__ranks_display_solo_image_badge_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/np__rank_solo_image_view" android:layout_width="@dimen/np__ranks_display_solo_avatar_size" android:layout_height="@dimen/np__ranks_display_solo_avatar_size" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/np__application_name" />
+        <View android:id="@id/np__rank_solo_image_view_border" android:background="@drawable/np__notification_rank_solo_avatar" android:layout_width="@dimen/np__ranks_display_solo_avatar_size" android:layout_height="@dimen/np__ranks_display_solo_avatar_size" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/np__rank_solo_player_rank_container" android:background="@drawable/np__notification_rank_solo_badge" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_alignBottom="@id/np__rank_solo_image_container" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/np__white" android:id="@id/np__rank_solo_player_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/np__place_holder_number" android:lines="1" android:layout_toLeftOf="@id/np__rank_solo_rank_separator" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/np__white" android:id="@id/np__rank_solo_rank_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/np__ranks_display_solo_rank_separator_margin" android:layout_marginRight="@dimen/np__ranks_display_solo_rank_separator_margin" android:text="@string/np__ranks_display_rank_separator" android:lines="1" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/np__white" android:id="@id/np__rank_solo_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/np__place_holder_number" android:lines="1" android:layout_toRightOf="@id/np__rank_solo_rank_separator" />
+    </RelativeLayout>
+</RelativeLayout>

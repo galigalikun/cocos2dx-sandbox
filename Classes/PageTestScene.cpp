@@ -89,7 +89,6 @@ bool PageTest::init()
     
     
     auto pageView = ui::PageView::create();
-    
     pageView->setSize(Size(visibleSize.width, 130.0f));
     pageView->setPosition(Vec2::ZERO);
     
@@ -111,6 +110,7 @@ bool PageTest::init()
         
         pageView->addPage(layout);
     }
+    pageView->scrollToPage(2);  // うまくいかない。handleReleaseLogicのboundaryのためだと思われる
     pageView->addEventListener(CC_CALLBACK_2(PageTest::pageViewEvent, this));
     
     

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/np__grey_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/np__loading_indicator_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/np__nextpeer_orange_selected" android:id="@id/np__tournament_results_random_indicator_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/np__loading_indicator_title" android:layout_toRightOf="@id/np__loading_indicator_progressbar" android:layout_centerVertical="true" style="@style/NP__.Widget.Text.Content.Large" />
+</RelativeLayout>

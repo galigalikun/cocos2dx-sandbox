@@ -3,6 +3,8 @@
 #include "PageTestScene.h"
 #include "VideoTestScene.h"
 #include "LabelTestScene.h"
+#include "AdGenerationModule.h"
+
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -109,6 +111,10 @@ bool HelloWorld::init()
         btn->addTargetWithActionForControlEvents(this, cccontrol_selector(HelloWorld::testAction), Control::EventType::TOUCH_DOWN);
         this->addChild(btn, 2);
     }
+    
+    
+    AdGenerationModule::createViewBottom("aid", AdGenerationModule::AdType::SP_320x50);
+    AdGenerationModule::showView();
     
     return true;
 }

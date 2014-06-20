@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NP__.Fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="@color/np__tournament_results_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/np__tournament_results_default_bar_height">
+        <Button android:id="@id/np__tournament_results_random_bar_button_replay" android:layout_width="wrap_content" android:layout_height="@dimen/np__tournament_results_default_button_height" android:layout_centerInParent="true" style="@style/NP__.TournamentResults.Replay.Button" />
+    </RelativeLayout>
+    <ListView android:id="@id/np__tournament_results_random_list_peers" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/np__list_divider" style="@style/NP__.Widget.ListView.Context" />
+    <RelativeLayout android:gravity="center" android:id="@id/np__tournament_results_random_empty_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/np__tournament_results_random_empty_view_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/np__tournament_results_random_indicator_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/np__loading_indicator_title" android:layout_toRightOf="@id/np__tournament_results_random_empty_view_progressbar" android:layout_centerVertical="true" style="@style/NP__.Widget.Text.Content.Large" />
+    </RelativeLayout>
+</LinearLayout>
