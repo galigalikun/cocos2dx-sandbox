@@ -3,9 +3,9 @@
 #include "PageTestScene.h"
 #include "VideoTestScene.h"
 #include "LabelTestScene.h"
-#include "NetworkTestScene.h"
+// #include "NetworkTestScene.h"
 #include "WebViewTestScene.h"
-#include "AdGenerationModule.h"
+#include "galigalikun/ad/AdGenerationModule.h"
 
 
 USING_NS_CC;
@@ -130,8 +130,10 @@ bool HelloWorld::init()
         this->addChild(btn, 6);
     }
     
+    /*
     AdGenerationModule::createViewBottom("aid", AdGenerationModule::AdType::SP_320x50);
     AdGenerationModule::showView();
+    */
     
     return true;
 }
@@ -142,15 +144,19 @@ void HelloWorld::testAction(Ref* pSender, Control::EventType controlEvent)
     switch (static_cast<ControlButton*>(pSender)->getTag()) {
         case 6:
         {
+            /*
             auto scene = WebViewTest::createScene();
             Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            */
             
             break;
         }
         case 5:
         {
+            /*
             auto scene = NetworkTest::createScene();
             Director::getInstance()->pushScene(cocos2d::CCTransitionFade::create(0.5f, scene));
+            */
             
             break;
         }

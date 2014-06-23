@@ -13,12 +13,12 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/PageTestScene.cpp \
                    ../../Classes/VideoTestScene.cpp \
                    ../../Classes/LabelTestScene.cpp \
-				   ../../Classes/NetworkTest.cpp \
+#				   ../../Classes/NetworkTest.cpp \
 				   ../../Classes/WebViewTestScene.cpp \
-				   ../../libs/webview/UIWebViewAndroid.cpp
+				   ../../Classes/galigalikun/ad/AdGenerationModuleAndroid.cpp \
+				   ../../Classes/galigalikun/webview/UIWebViewAndroid.cpp
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
-					$(LOCAL_PATH)/../../libs
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocosdenshion_static
@@ -42,3 +42,4 @@ $(call import-module,audio/android)
 $(call import-module,editor-support/cocostudio)
 $(call import-module,network)
 $(call import-module,extensions)
+

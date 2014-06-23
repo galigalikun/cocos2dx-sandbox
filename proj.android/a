@@ -1,0 +1,4 @@
+./build_native.py
+ant debug
+adb install -r bin/cocos2dx-sandbox-debug.apk
+

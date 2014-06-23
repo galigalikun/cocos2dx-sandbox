@@ -16,7 +16,7 @@
 #include "ui/CocosGUI.h"
 
 class NetworkTest : public cocos2d::Layer
-, public cocos2d::extension::AssetsManagerDelegateProtocol
+// , public cocos2d::extension::AssetsManagerDelegateProtocol
 // , public cocos2d::extension::ScrollViewDelegate
 {
 private:
@@ -35,10 +35,12 @@ public:
     void httpCallback(cocos2d::network::HttpClient*, cocos2d::network::HttpResponse*);
     
     
+    /*
     virtual void onError(cocos2d::extension::AssetsManager::ErrorCode errorCode);
     virtual void onProgress(int percent);
     virtual void onSuccess();
-    
+   */ 
+
     // implement the "static create()" method manually
     CREATE_FUNC(NetworkTest);
 };

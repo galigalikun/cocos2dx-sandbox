@@ -8,7 +8,7 @@
 
 #include "NetworkTestScene.h"
 #include "picojson/picojson.h"
-#include "external/unzip/unzip.h"
+// #include "external/unzip/unzip.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -58,6 +58,7 @@ bool NetworkTest::init()
             if(false == response->isSucceed()) {
                 return;
             }
+            /*
             
             auto buff = response->getResponseData();
             
@@ -107,6 +108,7 @@ bool NetworkTest::init()
             }
             // 終わったらcloseを忘れずに。
             unzClose(zipfile);
+            */
             
         });
         request->setTag("json");
@@ -114,11 +116,13 @@ bool NetworkTest::init()
     }
     
     
+    /*
     auto assetsManager = new AssetsManager("https://raw.github.com/samuele3hu/AssetsManagerTest/master/package.zip",
                       "https://raw.github.com/samuele3hu/AssetsManagerTest/master/version",
                       FileUtils::getInstance()->getWritablePath().c_str());
     assetsManager->setDelegate(this);
     assetsManager->update();
+    */
     
     return true;
 }
@@ -152,6 +156,7 @@ void NetworkTest::httpCallback(network::HttpClient* client, network::HttpRespons
 
 }
 
+/*
 void NetworkTest::onError(cocos2d::extension::AssetsManager::ErrorCode errorCode) {
     
 }
@@ -161,3 +166,4 @@ void NetworkTest::onProgress(int percent) {
 void NetworkTest::onSuccess() {
     CCLOG("onSuccess");
 }
+*/

@@ -68,32 +68,36 @@ bool PageTest::init()
     this->addChild(slider);
     
     
-    auto richText = ui::RichText::create();
-    richText->ignoreContentAdaptWithSize(false);
-    richText->setSize(Size(100, 100));
-    richText->setPosition(Vec2(visibleSize.width / 2.0f, visibleSize.height - 300));
-    this->addChild(richText);
-    
-    auto re1 = ui::RichElementText::create(1, Color3B::WHITE, 255, "This color is white. ", "Arial", 10);
-    richText->pushBackElement(re1);
-    
-    auto re2 = ui::RichElementText::create(2, Color3B::YELLOW, 255, "This color is yellow. ", "Arial", 24);
-    richText->insertElement(re2, 1);
-    
-    auto reimg = ui::RichElementImage::create(6, Color3B::WHITE, 255, "sliderballnormal.png");
-    richText->pushBackElement(reimg);
+
     
     // auto recustom = ui::RichElementCustomNode::create(1, Color3B::WHITE, 255, pAr);
     // richText->pushBackElement(recustom);
     
     
+    // androidだとバックグランドが緑がデフォ?
+    // androidだと盤面全体が背景白になる
+    // http://discuss.cocos2d-x.org/t/ui-pageview-bug-with-v3-rc1-green-background-on-android/12897
+    // 
+    auto layout = ui::Layout::create();
+    layout->setSize(Size(visibleSize.width, 200.0f));
+    layout->setPosition(Vec2::ZERO);
+    layout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
+    layout->setBackGroundColor(Color3B::BLUE);
+    this->addChild(layout);
     
     auto pageView = ui::PageView::create();
+    /*
+    pageView->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
+    pageView->setBackGroundColor(Color3B::RED);
+    */
     pageView->setSize(Size(visibleSize.width, 130.0f));
     pageView->setPosition(Vec2::ZERO);
+    pageView->setContentSize(Size(visibleSize.width, 130.0f));
     
     for (int i = 0; i < 3; ++i) {
         auto layout = ui::Layout::create();
+        layout->setBackGroundColor(Color3B::YELLOW);
+        layout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
         layout->setSize(Size(240.0f, 130.0f));
         
         auto imageView = ui::ImageView::create("HelloWorld.png");
@@ -110,11 +114,27 @@ bool PageTest::init()
         
         pageView->addPage(layout);
     }
-    pageView->scrollToPage(2);  // うまくいかない。handleReleaseLogicのboundaryのためだと思われる
+    // pageView->scrollToPage(2);  // うまくいかない。handleReleaseLogicのboundaryのためだと思われる
     pageView->addEventListener(CC_CALLBACK_2(PageTest::pageViewEvent, this));
     
     
-    this->addChild(pageView);
+    layout->addChild(pageView);
+    
+    
+    auto richText = ui::RichText::create();
+    richText->ignoreContentAdaptWithSize(false);
+    richText->setSize(Size(100, 100));
+    richText->setPosition(Vec2(visibleSize.width / 2.0f, visibleSize.height - 300));
+    this->addChild(richText);
+    
+    auto re1 = ui::RichElementText::create(1, Color3B::WHITE, 255, "This color is white. ", "Arial", 10);
+    richText->pushBackElement(re1);
+    
+    auto re2 = ui::RichElementText::create(2, Color3B::YELLOW, 255, "This color is yellow. ", "Arial", 24);
+    richText->insertElement(re2, 1);
+    
+    auto reimg = ui::RichElementImage::create(6, Color3B::WHITE, 255, "sliderballnormal.png");
+    richText->pushBackElement(reimg);
 
     
     return true;

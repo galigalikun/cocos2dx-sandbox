@@ -62,20 +62,20 @@
 		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
-		5107DACD195415D9002F32A1 /* UIWebViewOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5107DACB195415D9002F32A1 /* UIWebViewOS.mm */; };
 		5107DAD2195417F2002F32A1 /* WebViewTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5107DAD0195417F2002F32A1 /* WebViewTestScene.cpp */; };
 		514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 514C8D42194947340066AD90 /* ScrollTestScene.cpp */; };
 		515100401953D04700F65B99 /* NetworkTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5151003E1953D04700F65B99 /* NetworkTestScene.cpp */; };
 		519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */; };
 		519B9E091951714C001C5A8B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E081951714C001C5A8B /* fonts */; };
 		519B9E0B1951784F001C5A8B /* cocosui in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E0A1951784F001C5A8B /* cocosui */; };
-		51C90A301952B442007234FB /* AdGenerationModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51C90A2F1952B442007234FB /* AdGenerationModule.mm */; };
 		51C90A3B1952B457007234FB /* libADG1.3.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3A1952B457007234FB /* libADG1.3.3.a */; };
 		51C90A3D1952B485007234FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3C1952B485007234FB /* SystemConfiguration.framework */; };
 		51C90A3F1952B48E007234FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3E1952B48E007234FB /* CoreTelephony.framework */; };
 		51C90A411952B495007234FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A401952B495007234FB /* Security.framework */; };
 		51C90A431952B49C007234FB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A421952B49C007234FB /* EventKit.framework */; };
 		51C90A451952B4A5007234FB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A441952B4A5007234FB /* AdSupport.framework */; };
+		51F7F5B819582A5800CA5B07 /* AdGenerationModuleIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51F7F5B219582A5800CA5B07 /* AdGenerationModuleIOS.mm */; };
+		51F7F5BA19582A5800CA5B07 /* UIWebViewIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51F7F5B619582A5800CA5B07 /* UIWebViewIOS.mm */; };
 		51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */; };
 		51FD3847194EDD1E00FBAC6F /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3846194EDD1E00FBAC6F /* sliderProgress.png */; };
 		51FD384E194EDF8400FBAC6F /* check_box_active_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FD3848194EDF8400FBAC6F /* check_box_active_disable.png */; };
@@ -289,8 +289,6 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
-		5107DACA195415D9002F32A1 /* UIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebView.h; sourceTree = "<group>"; };
-		5107DACB195415D9002F32A1 /* UIWebViewOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIWebViewOS.mm; sourceTree = "<group>"; };
 		5107DAD0195417F2002F32A1 /* WebViewTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebViewTestScene.cpp; path = ../Classes/WebViewTestScene.cpp; sourceTree = "<group>"; };
 		5107DAD1195417F2002F32A1 /* WebViewTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewTestScene.h; path = ../Classes/WebViewTestScene.h; sourceTree = "<group>"; };
 		514C8D42194947340066AD90 /* ScrollTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollTestScene.cpp; path = ../Classes/ScrollTestScene.cpp; sourceTree = "<group>"; };
@@ -301,8 +299,6 @@
 		519B9E0119516AD3001C5A8B /* LabelTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelTestScene.h; path = ../Classes/LabelTestScene.h; sourceTree = "<group>"; };
 		519B9E081951714C001C5A8B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		519B9E0A1951784F001C5A8B /* cocosui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cocosui; sourceTree = "<group>"; };
-		51C90A2C1952B438007234FB /* AdGenerationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdGenerationModule.h; path = ../Classes/AdGenerationModule.h; sourceTree = "<group>"; };
-		51C90A2F1952B442007234FB /* AdGenerationModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AdGenerationModule.mm; path = ios/AdGenerationModule.mm; sourceTree = SOURCE_ROOT; };
 		51C90A321952B457007234FB /* ADGAdWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGAdWebView.h; sourceTree = "<group>"; };
 		51C90A331952B457007234FB /* ADGBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGBrowserViewController.h; sourceTree = "<group>"; };
 		51C90A341952B457007234FB /* ADGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGConstants.h; sourceTree = "<group>"; };
@@ -317,6 +313,10 @@
 		51C90A401952B495007234FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		51C90A421952B49C007234FB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
 		51C90A441952B4A5007234FB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		51F7F5B019582A5800CA5B07 /* AdGenerationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdGenerationModule.h; sourceTree = "<group>"; };
+		51F7F5B219582A5800CA5B07 /* AdGenerationModuleIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AdGenerationModuleIOS.mm; sourceTree = "<group>"; };
+		51F7F5B419582A5800CA5B07 /* UIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebView.h; sourceTree = "<group>"; };
+		51F7F5B619582A5800CA5B07 /* UIWebViewIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIWebViewIOS.mm; sourceTree = "<group>"; };
 		51FD3841194EC9B000FBAC6F /* PageTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PageTestScene.cpp; path = ../Classes/PageTestScene.cpp; sourceTree = "<group>"; };
 		51FD3842194EC9B000FBAC6F /* PageTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageTestScene.h; path = ../Classes/PageTestScene.h; sourceTree = "<group>"; };
 		51FD3846194EDD1E00FBAC6F /* sliderProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderProgress.png; sourceTree = "<group>"; };
@@ -412,7 +412,6 @@
 				503AE0FD17EB989F00D1A890 /* Prefix.pch */,
 				503AE0FE17EB989F00D1A890 /* RootViewController.h */,
 				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
-				51C90A2F1952B442007234FB /* AdGenerationModule.mm */,
 			);
 			name = ios;
 			path = Classes;
@@ -421,6 +420,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				51F7F5AE19582A5800CA5B07 /* galigalikun */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
@@ -433,7 +433,6 @@
 				51FD3864194EFA7200FBAC6F /* VideoTestScene.h */,
 				519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */,
 				519B9E0119516AD3001C5A8B /* LabelTestScene.h */,
-				51C90A2C1952B438007234FB /* AdGenerationModule.h */,
 				5151003E1953D04700F65B99 /* NetworkTestScene.cpp */,
 				5151003F1953D04700F65B99 /* NetworkTestScene.h */,
 				5107DAD0195417F2002F32A1 /* WebViewTestScene.cpp */,
@@ -479,7 +478,6 @@
 				503AE10617EB990700D1A890 /* mac */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				78C7DDAA14EBA5050085D0C2 /* Resources */,
-				5107DAC7195415D9002F32A1 /* libs */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -558,24 +556,6 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
-		5107DAC7195415D9002F32A1 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				5107DAC8195415D9002F32A1 /* webview */,
-			);
-			name = libs;
-			path = ../libs;
-			sourceTree = "<group>";
-		};
-		5107DAC8195415D9002F32A1 /* webview */ = {
-			isa = PBXGroup;
-			children = (
-				5107DACA195415D9002F32A1 /* UIWebView.h */,
-				5107DACB195415D9002F32A1 /* UIWebViewOS.mm */,
-			);
-			path = webview;
-			sourceTree = "<group>";
-		};
 		51C90A311952B457007234FB /* ADG_iOSSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,6 +572,34 @@
 			name = ADG_iOSSDK;
 			path = ios/ADG_iOSSDK;
 			sourceTree = SOURCE_ROOT;
+		};
+		51F7F5AE19582A5800CA5B07 /* galigalikun */ = {
+			isa = PBXGroup;
+			children = (
+				51F7F5AF19582A5800CA5B07 /* ad */,
+				51F7F5B319582A5800CA5B07 /* webview */,
+			);
+			name = galigalikun;
+			path = ../Classes/galigalikun;
+			sourceTree = "<group>";
+		};
+		51F7F5AF19582A5800CA5B07 /* ad */ = {
+			isa = PBXGroup;
+			children = (
+				51F7F5B019582A5800CA5B07 /* AdGenerationModule.h */,
+				51F7F5B219582A5800CA5B07 /* AdGenerationModuleIOS.mm */,
+			);
+			path = ad;
+			sourceTree = "<group>";
+		};
+		51F7F5B319582A5800CA5B07 /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				51F7F5B419582A5800CA5B07 /* UIWebView.h */,
+				51F7F5B619582A5800CA5B07 /* UIWebViewIOS.mm */,
+			);
+			path = webview;
+			sourceTree = "<group>";
 		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
@@ -839,17 +847,17 @@
 			files = (
 				51FD3865194EFA7200FBAC6F /* VideoTestScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				51F7F5BA19582A5800CA5B07 /* UIWebViewIOS.mm in Sources */,
 				51FD3843194EC9B000FBAC6F /* PageTestScene.cpp in Sources */,
 				514C8D44194947340066AD90 /* ScrollTestScene.cpp in Sources */,
-				51C90A301952B442007234FB /* AdGenerationModule.mm in Sources */,
 				5107DAD2195417F2002F32A1 /* WebViewTestScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				515100401953D04700F65B99 /* NetworkTestScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				51F7F5B819582A5800CA5B07 /* AdGenerationModuleIOS.mm in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
-				5107DACD195415D9002F32A1 /* UIWebViewOS.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

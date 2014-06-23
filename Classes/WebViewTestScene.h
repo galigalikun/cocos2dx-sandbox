@@ -11,7 +11,7 @@
 
 #include "cocos2d.h"
 #include "extensions/cocos-ext.h"
-#import "network/HttpClient.h"
+#include "network/HttpClient.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 
