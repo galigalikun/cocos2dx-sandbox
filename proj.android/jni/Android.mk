@@ -12,9 +12,13 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/ScrollTestScene.cpp \
                    ../../Classes/PageTestScene.cpp \
                    ../../Classes/VideoTestScene.cpp \
-                   ../../Classes/LabelTestScene.cpp
+                   ../../Classes/LabelTestScene.cpp \
+				   ../../Classes/NetworkTest.cpp \
+				   ../../Classes/WebViewTestScene.cpp \
+				   ../../libs/webview/UIWebViewAndroid.cpp
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
+					$(LOCAL_PATH)/../../libs
 
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocosdenshion_static
@@ -23,7 +27,7 @@ LOCAL_WHOLE_STATIC_LIBRARIES += cocosdenshion_static
 # LOCAL_WHOLE_STATIC_LIBRARIES += cocosbuilder_static
 # LOCAL_WHOLE_STATIC_LIBRARIES += spine_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocostudio_static
-# LOCAL_WHOLE_STATIC_LIBRARIES += cocos_network_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocos_network_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 
 
@@ -36,5 +40,5 @@ $(call import-module,audio/android)
 # $(call import-module,editor-support/cocosbuilder)
 # $(call import-module,editor-support/spine)
 $(call import-module,editor-support/cocostudio)
-# $(call import-module,network)
+$(call import-module,network)
 $(call import-module,extensions)
