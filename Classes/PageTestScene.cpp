@@ -77,7 +77,7 @@ bool PageTest::init()
     // androidだとバックグランドが緑がデフォ?
     // androidだと盤面全体が背景白になる
     // http://discuss.cocos2d-x.org/t/ui-pageview-bug-with-v3-rc1-green-background-on-android/12897
-    // 
+    //
     auto layout = ui::Layout::create();
     layout->setSize(Size(visibleSize.width, 200.0f));
     layout->setPosition(Vec2::ZERO);
