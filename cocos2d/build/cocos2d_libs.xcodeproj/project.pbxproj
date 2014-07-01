@@ -1792,6 +1792,20 @@
 			remoteGlobalIDString = A07A4EFD178387670073F6A7;
 			remoteInfo = "chipmunk iOS";
 		};
+		51ADB5F119627112002ACD4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51ADB0CF1962710F002ACD4A /* PluginFlurry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA09A372168AFD41008C1C7B;
+			remoteInfo = PluginFlurry;
+		};
+		51ADB5F419627112002ACD4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51ADB5CD19627112002ACD4A /* PluginProtocol.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA09A321168ADBC2008C1C7B;
+			remoteInfo = PluginProtocol;
+		};
 		A03F2E92178141D1006731B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1551A336158F2AB200E66CFE /* Project object */;
@@ -2769,6 +2783,98 @@
 		50FCEB9018C72017004AD434 /* WidgetReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WidgetReader.cpp; sourceTree = "<group>"; };
 		50FCEB9118C72017004AD434 /* WidgetReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReader.h; sourceTree = "<group>"; };
 		50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReaderProtocol.h; sourceTree = "<group>"; };
+		51ADB05C1962710E002ACD4A /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		51ADB05E1962710E002ACD4A /* Android.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		51ADB0611962710E002ACD4A /* jsb_cocos2dx_pluginx_auto_api.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jsb_cocos2dx_pluginx_auto_api.js; sourceTree = "<group>"; };
+		51ADB0621962710E002ACD4A /* jsb_cocos2dx_pluginx_auto.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsb_cocos2dx_pluginx_auto.cpp; sourceTree = "<group>"; };
+		51ADB0631962710E002ACD4A /* jsb_cocos2dx_pluginx_auto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = jsb_cocos2dx_pluginx_auto.hpp; sourceTree = "<group>"; };
+		51ADB0651962710E002ACD4A /* jsb_pluginx_basic_conversions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsb_pluginx_basic_conversions.cpp; sourceTree = "<group>"; };
+		51ADB0661962710E002ACD4A /* jsb_pluginx_basic_conversions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsb_pluginx_basic_conversions.h; sourceTree = "<group>"; };
+		51ADB0671962710E002ACD4A /* jsb_pluginx_extension_registration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsb_pluginx_extension_registration.cpp; sourceTree = "<group>"; };
+		51ADB0681962710E002ACD4A /* jsb_pluginx_extension_registration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsb_pluginx_extension_registration.h; sourceTree = "<group>"; };
+		51ADB0691962710E002ACD4A /* jsb_pluginx_manual_callback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsb_pluginx_manual_callback.cpp; sourceTree = "<group>"; };
+		51ADB06A1962710E002ACD4A /* jsb_pluginx_manual_callback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsb_pluginx_manual_callback.h; sourceTree = "<group>"; };
+		51ADB06B1962710E002ACD4A /* jsb_pluginx_manual_protocols.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsb_pluginx_manual_protocols.cpp; sourceTree = "<group>"; };
+		51ADB06C1962710E002ACD4A /* jsb_pluginx_manual_protocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsb_pluginx_manual_protocols.h; sourceTree = "<group>"; };
+		51ADB06D1962710E002ACD4A /* jsb_pluginx_spidermonkey_specifics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsb_pluginx_spidermonkey_specifics.cpp; sourceTree = "<group>"; };
+		51ADB06E1962710E002ACD4A /* jsb_pluginx_spidermonkey_specifics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsb_pluginx_spidermonkey_specifics.h; sourceTree = "<group>"; };
+		51ADB06F1962710E002ACD4A /* pluginxUTF8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pluginxUTF8.cpp; sourceTree = "<group>"; };
+		51ADB0701962710E002ACD4A /* pluginxUTF8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pluginxUTF8.h; sourceTree = "<group>"; };
+		51ADB0711962710E002ACD4A /* uthash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uthash.h; sourceTree = "<group>"; };
+		51ADB0731962710E002ACD4A /* jsb_pluginx.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jsb_pluginx.js; sourceTree = "<group>"; };
+		51ADB0C41962710F002ACD4A /* AdsFlurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsFlurry.h; sourceTree = "<group>"; };
+		51ADB0C51962710F002ACD4A /* AdsFlurry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsFlurry.m; sourceTree = "<group>"; };
+		51ADB0C61962710F002ACD4A /* AnalyticsFlurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsFlurry.h; sourceTree = "<group>"; };
+		51ADB0C71962710F002ACD4A /* AnalyticsFlurry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalyticsFlurry.m; sourceTree = "<group>"; };
+		51ADB0C81962710F002ACD4A /* Flurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		51ADB0CA1962710F002ACD4A /* FlurryAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
+		51ADB0CB1962710F002ACD4A /* FlurryAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAds.h; sourceTree = "<group>"; };
+		51ADB0CC1962710F002ACD4A /* libFlurryAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds.a; sourceTree = "<group>"; };
+		51ADB0CD1962710F002ACD4A /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		51ADB0CE1962710F002ACD4A /* PluginFlurry-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PluginFlurry-Prefix.pch"; sourceTree = "<group>"; };
+		51ADB0CF1962710F002ACD4A /* PluginFlurry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PluginFlurry.xcodeproj; sourceTree = "<group>"; };
+		51ADB57819627112002ACD4A /* PluginFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginFactory.h; sourceTree = "<group>"; };
+		51ADB57919627112002ACD4A /* PluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
+		51ADB57A19627112002ACD4A /* PluginParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginParam.h; sourceTree = "<group>"; };
+		51ADB57B19627112002ACD4A /* PluginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginProtocol.h; sourceTree = "<group>"; };
+		51ADB57C19627112002ACD4A /* ProtocolAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolAds.h; sourceTree = "<group>"; };
+		51ADB57D19627112002ACD4A /* ProtocolAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolAnalytics.h; sourceTree = "<group>"; };
+		51ADB57E19627112002ACD4A /* ProtocolIAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolIAP.h; sourceTree = "<group>"; };
+		51ADB57F19627112002ACD4A /* ProtocolShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolShare.h; sourceTree = "<group>"; };
+		51ADB58019627112002ACD4A /* ProtocolSocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolSocial.h; sourceTree = "<group>"; };
+		51ADB58119627112002ACD4A /* ProtocolUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolUser.h; sourceTree = "<group>"; };
+		51ADB59319627112002ACD4A /* AdsWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsWrapper.h; sourceTree = "<group>"; };
+		51ADB59419627112002ACD4A /* AdsWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AdsWrapper.mm; sourceTree = "<group>"; };
+		51ADB59519627112002ACD4A /* InterfaceAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceAds.h; sourceTree = "<group>"; };
+		51ADB59619627112002ACD4A /* InterfaceAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceAnalytics.h; sourceTree = "<group>"; };
+		51ADB59719627112002ACD4A /* InterfaceIAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceIAP.h; sourceTree = "<group>"; };
+		51ADB59819627112002ACD4A /* InterfaceShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceShare.h; sourceTree = "<group>"; };
+		51ADB59919627112002ACD4A /* InterfaceSocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceSocial.h; sourceTree = "<group>"; };
+		51ADB59A19627112002ACD4A /* InterfaceUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceUser.h; sourceTree = "<group>"; };
+		51ADB59B19627112002ACD4A /* PluginFactory.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PluginFactory.mm; sourceTree = "<group>"; };
+		51ADB59C19627112002ACD4A /* PluginOCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginOCMacros.h; sourceTree = "<group>"; };
+		51ADB59D19627112002ACD4A /* PluginProtocol.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PluginProtocol.mm; sourceTree = "<group>"; };
+		51ADB59E19627112002ACD4A /* PluginUtilsIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginUtilsIOS.h; sourceTree = "<group>"; };
+		51ADB59F19627112002ACD4A /* PluginUtilsIOS.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PluginUtilsIOS.mm; sourceTree = "<group>"; };
+		51ADB5A019627112002ACD4A /* ProtocolAds.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolAds.mm; sourceTree = "<group>"; };
+		51ADB5A119627112002ACD4A /* ProtocolAnalytics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolAnalytics.mm; sourceTree = "<group>"; };
+		51ADB5A219627112002ACD4A /* ProtocolIAP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolIAP.mm; sourceTree = "<group>"; };
+		51ADB5A319627112002ACD4A /* ProtocolShare.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolShare.mm; sourceTree = "<group>"; };
+		51ADB5A419627112002ACD4A /* ProtocolSocial.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolSocial.mm; sourceTree = "<group>"; };
+		51ADB5A519627112002ACD4A /* ProtocolUser.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ProtocolUser.mm; sourceTree = "<group>"; };
+		51ADB5A619627112002ACD4A /* ShareWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareWrapper.h; sourceTree = "<group>"; };
+		51ADB5A719627112002ACD4A /* ShareWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ShareWrapper.mm; sourceTree = "<group>"; };
+		51ADB5A819627112002ACD4A /* SocialWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialWrapper.h; sourceTree = "<group>"; };
+		51ADB5A919627112002ACD4A /* SocialWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SocialWrapper.mm; sourceTree = "<group>"; };
+		51ADB5AA19627112002ACD4A /* UserWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserWrapper.h; sourceTree = "<group>"; };
+		51ADB5AB19627112002ACD4A /* UserWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UserWrapper.mm; sourceTree = "<group>"; };
+		51ADB5AC19627112002ACD4A /* PluginManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PluginManager.cpp; sourceTree = "<group>"; };
+		51ADB5AD19627112002ACD4A /* PluginParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PluginParam.cpp; sourceTree = "<group>"; };
+		51ADB5CC19627112002ACD4A /* PluginProtocol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PluginProtocol-Prefix.pch"; sourceTree = "<group>"; };
+		51ADB5CD19627112002ACD4A /* PluginProtocol.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PluginProtocol.xcodeproj; sourceTree = "<group>"; };
+		51ADB5D019627112002ACD4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		51ADB5D319627112002ACD4A /* build_common.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = build_common.xml; sourceTree = "<group>"; };
+		51ADB5D419627112002ACD4A /* android-build.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "android-build.py"; sourceTree = "<group>"; };
+		51ADB5D519627112002ACD4A /* config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.sh; sourceTree = "<group>"; };
+		51ADB5D619627112002ACD4A /* gameDevGuide.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = gameDevGuide.sh; sourceTree = "<group>"; };
+		51ADB5D819627112002ACD4A /* conversions.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = conversions.yaml; sourceTree = "<group>"; };
+		51ADB5D919627112002ACD4A /* genbindings-all.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "genbindings-all.sh"; sourceTree = "<group>"; };
+		51ADB5DA19627112002ACD4A /* genbindings.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genbindings.sh; sourceTree = "<group>"; };
+		51ADB5DB19627112002ACD4A /* modify_include.sed */ = {isa = PBXFileReference; lastKnownFileType = text; path = modify_include.sed; sourceTree = "<group>"; };
+		51ADB5DD19627112002ACD4A /* cocos2dx_pluginx.ini */ = {isa = PBXFileReference; lastKnownFileType = text; path = cocos2dx_pluginx.ini; sourceTree = "<group>"; };
+		51ADB5DE19627112002ACD4A /* publish.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish.sh; sourceTree = "<group>"; };
+		51ADB5E019627112002ACD4A /* addPluginForGame.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = addPluginForGame.sh; sourceTree = "<group>"; };
+		51ADB5E119627112002ACD4A /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		51ADB5E219627112002ACD4A /* modifyAppMK.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = modifyAppMK.sh; sourceTree = "<group>"; };
+		51ADB5E319627112002ACD4A /* modifyClassPath.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = modifyClassPath.py; sourceTree = "<group>"; };
+		51ADB5E419627112002ACD4A /* modifyManifest.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = modifyManifest.py; sourceTree = "<group>"; };
+		51ADB5E519627112002ACD4A /* modifyMK.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = modifyMK.sh; sourceTree = "<group>"; };
+		51ADB5E619627112002ACD4A /* modifyProject.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = modifyProject.py; sourceTree = "<group>"; };
+		51ADB5E719627112002ACD4A /* modifyRes.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = modifyRes.sh; sourceTree = "<group>"; };
+		51ADB5E819627112002ACD4A /* steps.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = steps.py; sourceTree = "<group>"; };
+		51ADB5EA19627112002ACD4A /* checkEnvironment.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = checkEnvironment.sh; sourceTree = "<group>"; };
+		51ADB5EB19627112002ACD4A /* genPrebuildMK.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genPrebuildMK.sh; sourceTree = "<group>"; };
+		51ADB5EC19627112002ACD4A /* publishPlugin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publishPlugin.sh; sourceTree = "<group>"; };
 		A03F2CB81780BD04006731B9 /* libchipmunk Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2D9B1780BDF7006731B9 /* libbox2d Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libbox2d Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2ED617814268006731B9 /* libCocosDenshion Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCocosDenshion Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2926,6 +3032,7 @@
 				500DC89819105D41007B91BF /* renderer */,
 				1AAF5849180E40B8000584C8 /* storage */,
 				2905F9E618CF08D000240AA3 /* ui */,
+				51ADB05B1962710E002ACD4A /* plugin */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4778,6 +4885,282 @@
 			path = TextReader;
 			sourceTree = "<group>";
 		};
+		51ADB05B1962710E002ACD4A /* plugin */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB05C1962710E002ACD4A /* AUTHORS */,
+				51ADB05D1962710E002ACD4A /* jsbindings */,
+				51ADB0741962710E002ACD4A /* plugins */,
+				51ADB57619627112002ACD4A /* protocols */,
+				51ADB5D019627112002ACD4A /* README.md */,
+				51ADB5D119627112002ACD4A /* tools */,
+			);
+			name = plugin;
+			path = ../../../anipla/cocos2d/plugin;
+			sourceTree = "<group>";
+		};
+		51ADB05D1962710E002ACD4A /* jsbindings */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB05E1962710E002ACD4A /* Android.mk */,
+				51ADB05F1962710E002ACD4A /* auto */,
+				51ADB0641962710E002ACD4A /* manual */,
+				51ADB0721962710E002ACD4A /* script */,
+			);
+			path = jsbindings;
+			sourceTree = "<group>";
+		};
+		51ADB05F1962710E002ACD4A /* auto */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0601962710E002ACD4A /* api */,
+				51ADB0621962710E002ACD4A /* jsb_cocos2dx_pluginx_auto.cpp */,
+				51ADB0631962710E002ACD4A /* jsb_cocos2dx_pluginx_auto.hpp */,
+			);
+			path = auto;
+			sourceTree = "<group>";
+		};
+		51ADB0601962710E002ACD4A /* api */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0611962710E002ACD4A /* jsb_cocos2dx_pluginx_auto_api.js */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		51ADB0641962710E002ACD4A /* manual */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0651962710E002ACD4A /* jsb_pluginx_basic_conversions.cpp */,
+				51ADB0661962710E002ACD4A /* jsb_pluginx_basic_conversions.h */,
+				51ADB0671962710E002ACD4A /* jsb_pluginx_extension_registration.cpp */,
+				51ADB0681962710E002ACD4A /* jsb_pluginx_extension_registration.h */,
+				51ADB0691962710E002ACD4A /* jsb_pluginx_manual_callback.cpp */,
+				51ADB06A1962710E002ACD4A /* jsb_pluginx_manual_callback.h */,
+				51ADB06B1962710E002ACD4A /* jsb_pluginx_manual_protocols.cpp */,
+				51ADB06C1962710E002ACD4A /* jsb_pluginx_manual_protocols.h */,
+				51ADB06D1962710E002ACD4A /* jsb_pluginx_spidermonkey_specifics.cpp */,
+				51ADB06E1962710E002ACD4A /* jsb_pluginx_spidermonkey_specifics.h */,
+				51ADB06F1962710E002ACD4A /* pluginxUTF8.cpp */,
+				51ADB0701962710E002ACD4A /* pluginxUTF8.h */,
+				51ADB0711962710E002ACD4A /* uthash.h */,
+			);
+			path = manual;
+			sourceTree = "<group>";
+		};
+		51ADB0721962710E002ACD4A /* script */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0731962710E002ACD4A /* jsb_pluginx.js */,
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		51ADB0741962710E002ACD4A /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0B01962710F002ACD4A /* flurry */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		51ADB0B01962710F002ACD4A /* flurry */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0C31962710F002ACD4A /* proj.ios */,
+			);
+			path = flurry;
+			sourceTree = "<group>";
+		};
+		51ADB0C31962710F002ACD4A /* proj.ios */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0C41962710F002ACD4A /* AdsFlurry.h */,
+				51ADB0C51962710F002ACD4A /* AdsFlurry.m */,
+				51ADB0C61962710F002ACD4A /* AnalyticsFlurry.h */,
+				51ADB0C71962710F002ACD4A /* AnalyticsFlurry.m */,
+				51ADB0C81962710F002ACD4A /* Flurry.h */,
+				51ADB0C91962710F002ACD4A /* FlurryAds */,
+				51ADB0CD1962710F002ACD4A /* libFlurry.a */,
+				51ADB0CE1962710F002ACD4A /* PluginFlurry-Prefix.pch */,
+				51ADB0CF1962710F002ACD4A /* PluginFlurry.xcodeproj */,
+			);
+			path = proj.ios;
+			sourceTree = "<group>";
+		};
+		51ADB0C91962710F002ACD4A /* FlurryAds */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB0CA1962710F002ACD4A /* FlurryAdDelegate.h */,
+				51ADB0CB1962710F002ACD4A /* FlurryAds.h */,
+				51ADB0CC1962710F002ACD4A /* libFlurryAds.a */,
+			);
+			path = FlurryAds;
+			sourceTree = "<group>";
+		};
+		51ADB0D01962710F002ACD4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5F219627112002ACD4A /* libPluginFlurry.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51ADB57619627112002ACD4A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB57719627112002ACD4A /* include */,
+				51ADB58219627112002ACD4A /* platform */,
+				51ADB5AC19627112002ACD4A /* PluginManager.cpp */,
+				51ADB5AD19627112002ACD4A /* PluginParam.cpp */,
+				51ADB5CB19627112002ACD4A /* proj.ios */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		51ADB57719627112002ACD4A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB57819627112002ACD4A /* PluginFactory.h */,
+				51ADB57919627112002ACD4A /* PluginManager.h */,
+				51ADB57A19627112002ACD4A /* PluginParam.h */,
+				51ADB57B19627112002ACD4A /* PluginProtocol.h */,
+				51ADB57C19627112002ACD4A /* ProtocolAds.h */,
+				51ADB57D19627112002ACD4A /* ProtocolAnalytics.h */,
+				51ADB57E19627112002ACD4A /* ProtocolIAP.h */,
+				51ADB57F19627112002ACD4A /* ProtocolShare.h */,
+				51ADB58019627112002ACD4A /* ProtocolSocial.h */,
+				51ADB58119627112002ACD4A /* ProtocolUser.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		51ADB58219627112002ACD4A /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB59219627112002ACD4A /* ios */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		51ADB59219627112002ACD4A /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB59319627112002ACD4A /* AdsWrapper.h */,
+				51ADB59419627112002ACD4A /* AdsWrapper.mm */,
+				51ADB59519627112002ACD4A /* InterfaceAds.h */,
+				51ADB59619627112002ACD4A /* InterfaceAnalytics.h */,
+				51ADB59719627112002ACD4A /* InterfaceIAP.h */,
+				51ADB59819627112002ACD4A /* InterfaceShare.h */,
+				51ADB59919627112002ACD4A /* InterfaceSocial.h */,
+				51ADB59A19627112002ACD4A /* InterfaceUser.h */,
+				51ADB59B19627112002ACD4A /* PluginFactory.mm */,
+				51ADB59C19627112002ACD4A /* PluginOCMacros.h */,
+				51ADB59D19627112002ACD4A /* PluginProtocol.mm */,
+				51ADB59E19627112002ACD4A /* PluginUtilsIOS.h */,
+				51ADB59F19627112002ACD4A /* PluginUtilsIOS.mm */,
+				51ADB5A019627112002ACD4A /* ProtocolAds.mm */,
+				51ADB5A119627112002ACD4A /* ProtocolAnalytics.mm */,
+				51ADB5A219627112002ACD4A /* ProtocolIAP.mm */,
+				51ADB5A319627112002ACD4A /* ProtocolShare.mm */,
+				51ADB5A419627112002ACD4A /* ProtocolSocial.mm */,
+				51ADB5A519627112002ACD4A /* ProtocolUser.mm */,
+				51ADB5A619627112002ACD4A /* ShareWrapper.h */,
+				51ADB5A719627112002ACD4A /* ShareWrapper.mm */,
+				51ADB5A819627112002ACD4A /* SocialWrapper.h */,
+				51ADB5A919627112002ACD4A /* SocialWrapper.mm */,
+				51ADB5AA19627112002ACD4A /* UserWrapper.h */,
+				51ADB5AB19627112002ACD4A /* UserWrapper.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		51ADB5CB19627112002ACD4A /* proj.ios */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5CC19627112002ACD4A /* PluginProtocol-Prefix.pch */,
+				51ADB5CD19627112002ACD4A /* PluginProtocol.xcodeproj */,
+			);
+			path = proj.ios;
+			sourceTree = "<group>";
+		};
+		51ADB5CE19627112002ACD4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5F519627112002ACD4A /* libPluginProtocol.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51ADB5D119627112002ACD4A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5D219627112002ACD4A /* android */,
+				51ADB5D419627112002ACD4A /* android-build.py */,
+				51ADB5D519627112002ACD4A /* config.sh */,
+				51ADB5D619627112002ACD4A /* gameDevGuide.sh */,
+				51ADB5D719627112002ACD4A /* pluginx-bindings-generator */,
+				51ADB5DE19627112002ACD4A /* publish.sh */,
+				51ADB5DF19627112002ACD4A /* toolsForGame */,
+				51ADB5E919627112002ACD4A /* toolsForPublish */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		51ADB5D219627112002ACD4A /* android */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5D319627112002ACD4A /* build_common.xml */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		51ADB5D719627112002ACD4A /* pluginx-bindings-generator */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5D819627112002ACD4A /* conversions.yaml */,
+				51ADB5D919627112002ACD4A /* genbindings-all.sh */,
+				51ADB5DA19627112002ACD4A /* genbindings.sh */,
+				51ADB5DB19627112002ACD4A /* modify_include.sed */,
+				51ADB5DC19627112002ACD4A /* tojs */,
+			);
+			path = "pluginx-bindings-generator";
+			sourceTree = "<group>";
+		};
+		51ADB5DC19627112002ACD4A /* tojs */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5DD19627112002ACD4A /* cocos2dx_pluginx.ini */,
+			);
+			path = tojs;
+			sourceTree = "<group>";
+		};
+		51ADB5DF19627112002ACD4A /* toolsForGame */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5E019627112002ACD4A /* addPluginForGame.sh */,
+				51ADB5E119627112002ACD4A /* main.py */,
+				51ADB5E219627112002ACD4A /* modifyAppMK.sh */,
+				51ADB5E319627112002ACD4A /* modifyClassPath.py */,
+				51ADB5E419627112002ACD4A /* modifyManifest.py */,
+				51ADB5E519627112002ACD4A /* modifyMK.sh */,
+				51ADB5E619627112002ACD4A /* modifyProject.py */,
+				51ADB5E719627112002ACD4A /* modifyRes.sh */,
+				51ADB5E819627112002ACD4A /* steps.py */,
+			);
+			path = toolsForGame;
+			sourceTree = "<group>";
+		};
+		51ADB5E919627112002ACD4A /* toolsForPublish */ = {
+			isa = PBXGroup;
+			children = (
+				51ADB5EA19627112002ACD4A /* checkEnvironment.sh */,
+				51ADB5EB19627112002ACD4A /* genPrebuildMK.sh */,
+				51ADB5EC19627112002ACD4A /* publishPlugin.sh */,
+			);
+			path = toolsForPublish;
+			sourceTree = "<group>";
+		};
 		B29594B81926D61F003EEF37 /* 3d */ = {
 			isa = PBXGroup;
 			children = (
@@ -5974,6 +6357,16 @@
 			mainGroup = 1551A334158F2AB200E66CFE;
 			productRefGroup = 1551A340158F2AB200E66CFE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 51ADB0D01962710F002ACD4A /* Products */;
+					ProjectRef = 51ADB0CF1962710F002ACD4A /* PluginFlurry.xcodeproj */;
+				},
+				{
+					ProductGroup = 51ADB5CE19627112002ACD4A /* Products */;
+					ProjectRef = 51ADB5CD19627112002ACD4A /* PluginProtocol.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A03F2E8E178141C1006731B9 /* build all libs Mac */,
@@ -5991,6 +6384,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		51ADB5F219627112002ACD4A /* libPluginFlurry.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPluginFlurry.a;
+			remoteRef = 51ADB5F119627112002ACD4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		51ADB5F519627112002ACD4A /* libPluginProtocol.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPluginProtocol.a;
+			remoteRef = 51ADB5F419627112002ACD4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1551A33B158F2AB200E66CFE /* Sources */ = {

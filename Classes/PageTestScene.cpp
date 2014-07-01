@@ -96,9 +96,12 @@ bool PageTest::init()
     
     for (int i = 0; i < 3; ++i) {
         auto layout = ui::Layout::create();
+        layout->setBackGroundImage("");
         layout->setBackGroundColor(Color3B::YELLOW);
         layout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
         layout->setSize(Size(240.0f, 130.0f));
+        // layout->addTouchEventListener(<#ccWidgetTouchCallback callback#>)
+
         
         auto imageView = ui::ImageView::create("HelloWorld.png");
         imageView->setScale9Enabled(true);
@@ -110,6 +113,12 @@ bool PageTest::init()
         label->setColor(Color3B(192, 192, 192));
         label->setPosition(Vec2(layout->getSize().width / 2.0f, layout->getSize().height / 2.0f));
         layout->addChild(label);
+        
+        auto btn = ui::Button::create("");
+        btn->setTitleText("");
+        btn->setTitleFontSize(12);
+        btn->setTitleFontName("");
+
         
         
         pageView->addPage(layout);

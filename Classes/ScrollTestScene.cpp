@@ -70,21 +70,50 @@ bool ScrollTest::init()
     auto scrollView = ui::ScrollView::create();
     scrollView->setSize(Size(visibleSize.width, visibleSize.height - 100));
     scrollView->setPosition(Point::ZERO);
-    scrollView->setInnerContainerSize(Size(scrollView->getSize().width, 2000));
-    scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
+    // scrollView->setPositionType(ParticleSystem::PositionType::RELATIVE);
+    
+    scrollView->setInnerContainerSize(Size(2000, scrollView->getSize().height));
+    scrollView->setDirection(ui::ScrollView::Direction::HORIZONTAL);
     scrollView->addEventListener(CC_CALLBACK_2(ScrollTest::scrollEvent, this));
     this->addChild(scrollView, 3);
     
-    
+    auto a = ControlButton::create();
+    a->setEnabled(true);
     auto continerLayer = Layer::create();
-    continerLayer->setContentSize(Size(visibleSize.width, 2000));
+    continerLayer->setContentSize(Size(2000, visibleSize.height));
     continerLayer->setPosition(Point(0,0));
     for (int i = 0; i < 10; i++) {
-        scrollView->addChild(this->create9Sprite(visibleSize.width/2 + origin.x, i*200+100));
+        auto frame = ui::Layout::create();
+        frame->addTouchEventListener(CC_CALLBACK_2(ScrollTest::testClick, this));
+        frame->setBackGroundImage("");
+        frame->setBackGroundColor(Color3B::BLACK);
+        frame->setBackGroundColorOpacity(100);
+        frame->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
+        
+        auto img = ui::ImageView::create("");
+        if(img->isTouchEnabled())
+        {
+            
+        }
+        img->setTouchEnabled(false);
+        img->setScale(0.5);
+        
+        auto name = ui::Text::create("", "", 33);
+        name->setColor(Color3B::RED);
+        name->setString("");
+        name->setTextAreaSize(Size(20,20));
+        name->setTextHorizontalAlignment(TextHAlignment::CENTER);
+        name->setTextVerticalAlignment(TextVAlignment::CENTER);
+        
+        
+        
+        scrollView->addChild(this->create9Sprite(i*200+100, visibleSize.height/2 + origin.y));
         // continerLayer->addChild(this->create9Sprite(visibleSize.width/2 + origin.x, i*200+100));
     }
     
     scrollView->addChild(continerLayer);
+    
+    scrollView->setInnerContainerSize(Size(10, 10));
     
     
     /*

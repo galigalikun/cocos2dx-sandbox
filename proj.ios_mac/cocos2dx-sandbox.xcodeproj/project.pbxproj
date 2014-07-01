@@ -68,6 +68,8 @@
 		519B9E0219516AD3001C5A8B /* LabelTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 519B9E0019516AD3001C5A8B /* LabelTestScene.cpp */; };
 		519B9E091951714C001C5A8B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E081951714C001C5A8B /* fonts */; };
 		519B9E0B1951784F001C5A8B /* cocosui in Resources */ = {isa = PBXBuildFile; fileRef = 519B9E0A1951784F001C5A8B /* cocosui */; };
+		51ADB05619625C67002ACD4A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADB05519625C67002ACD4A /* MessageUI.framework */; };
+		51ADB05A19625C77002ACD4A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ADB05919625C77002ACD4A /* StoreKit.framework */; };
 		51C90A3B1952B457007234FB /* libADG1.3.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3A1952B457007234FB /* libADG1.3.3.a */; };
 		51C90A3D1952B485007234FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3C1952B485007234FB /* SystemConfiguration.framework */; };
 		51C90A3F1952B48E007234FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C90A3E1952B48E007234FB /* CoreTelephony.framework */; };
@@ -299,6 +301,8 @@
 		519B9E0119516AD3001C5A8B /* LabelTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelTestScene.h; path = ../Classes/LabelTestScene.h; sourceTree = "<group>"; };
 		519B9E081951714C001C5A8B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		519B9E0A1951784F001C5A8B /* cocosui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cocosui; sourceTree = "<group>"; };
+		51ADB05519625C67002ACD4A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		51ADB05919625C77002ACD4A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		51C90A321952B457007234FB /* ADGAdWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGAdWebView.h; sourceTree = "<group>"; };
 		51C90A331952B457007234FB /* ADGBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGBrowserViewController.h; sourceTree = "<group>"; };
 		51C90A341952B457007234FB /* ADGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGConstants.h; sourceTree = "<group>"; };
@@ -350,6 +354,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51ADB05A19625C77002ACD4A /* StoreKit.framework in Frameworks */,
+				51ADB05619625C67002ACD4A /* MessageUI.framework in Frameworks */,
 				51C90A451952B4A5007234FB /* AdSupport.framework in Frameworks */,
 				51C90A431952B49C007234FB /* EventKit.framework in Frameworks */,
 				51C90A411952B495007234FB /* Security.framework in Frameworks */,
@@ -485,6 +491,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51ADB05919625C77002ACD4A /* StoreKit.framework */,
+				51ADB05519625C67002ACD4A /* MessageUI.framework */,
 				51C90A441952B4A5007234FB /* AdSupport.framework */,
 				51C90A421952B49C007234FB /* EventKit.framework */,
 				51C90A401952B495007234FB /* Security.framework */,

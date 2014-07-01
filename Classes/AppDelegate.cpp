@@ -1,5 +1,8 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "plugin/protocols/include/PluginManager.h"
+#include "plugin/protocols/include/ProtocolAnalytics.h"
+
 
 USING_NS_CC;
 
@@ -19,6 +22,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLView::create("My Game");
         director->setOpenGLView(glview);
     }
+    
+    // http://laboyukai.blogspot.jp/2014/06/cocos2dx-v30-plugin-x-admob.html
+    auto pluginAnalytics = dynamic_cast<cocos2d::plugin::ProtocolAnalytics*>(cocos2d::plugin::PluginManager::getInstance()->loadPlugin("AnalyticsFlurry"));
+    
+    pluginAnalytics->startSession("N4KJMYNR7H8BSNG62GP5");
 
     // turn on display FPS
     director->setDisplayStats(false);

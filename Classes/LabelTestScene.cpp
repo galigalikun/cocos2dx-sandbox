@@ -63,6 +63,7 @@ bool LabelTest::init()
     label->setTextAreaSize(Size(visibleSize.width, 200));
     label->setContentSize(Size(visibleSize.width, 200));
     label->setPosition(Vec2(visibleSize.width/2, 200));
+    label->setTextHorizontalAlignment(TextHAlignment::CENTER);
     this->addChild(label);
     
 

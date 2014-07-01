@@ -56,6 +56,11 @@ bool HelloWorld::init()
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
+    
+    
+    auto node = Node::create();
+    node->removeAllChildren();
+    node->removeChildByTag(100);
 
     /////////////////////////////
     // 3. add your codes below...
@@ -74,7 +79,7 @@ bool HelloWorld::init()
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
-
+    sprite->getTextureRect();
     // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, sprite->getContentSize().height/2));
 
